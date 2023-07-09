@@ -1,0 +1,11 @@
+/* 
+  name.strings
+  SwiftProj
+
+  Created by suhyup02 on 2022/01/20.
+  Copyright © 2022 garajilpung. All rights reserved.
+*/
+"lb-Title" = "레이블";
+"btn-Title" = "버튼";
+"tf-Title" = "텍스트 필드";
+"tv-Title" = "텍스트 뷰";

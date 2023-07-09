@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MPDFViewController" customModule="SwiftProj" customModuleProvider="target">
+            <connections>
+                <outlet property="vPro1" destination="bsO-X7-IDi" id="hQ0-H8-XNW"/>
+                <outlet property="vPro2" destination="y16-zL-epm" id="IjI-FT-eQ8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="bsO-X7-IDi">
+                    <rect key="frame" x="0.0" y="852" width="414" height="10"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="367-bs-Oy7"/>
+                    </constraints>
+                </progressView>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="y16-zL-epm">
+                    <rect key="frame" x="0.0" y="832" width="414" height="10"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="chh-tx-oAC"/>
+                    </constraints>
+                </progressView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="bsO-X7-IDi" firstAttribute="top" secondItem="y16-zL-epm" secondAttribute="bottom" constant="10" id="0cO-tT-LXL"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="y16-zL-epm" secondAttribute="trailing" id="Qwp-4f-rFW"/>
+                <constraint firstItem="bsO-X7-IDi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Tzp-C6-eoX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="bsO-X7-IDi" secondAttribute="bottom" id="mmK-cf-hfl"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bsO-X7-IDi" secondAttribute="trailing" id="rO9-1D-fTv"/>
+                <constraint firstItem="y16-zL-epm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="wbW-rS-jya"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="129"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

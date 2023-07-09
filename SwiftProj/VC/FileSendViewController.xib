@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FileSendViewController" customModule="SwiftProj" customModuleProvider="target">
+            <connections>
+                <outlet property="imgV1" destination="xWf-V0-hy5" id="MGb-Up-IwI"/>
+                <outlet property="imgV2" destination="fsl-iZ-vIJ" id="Xqb-gc-6xS"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pwo-fR-PKg">
+                    <rect key="frame" x="10" y="64" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="0D3-UL-PJR"/>
+                        <constraint firstAttribute="height" constant="80" id="sS6-i3-QgG"/>
+                    </constraints>
+                    <state key="normal" title="Download"/>
+                    <connections>
+                        <action selector="onBtnDownload:" destination="-1" eventType="touchUpInside" id="ddg-Gz-BQl"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="LrE-JE-WoQ">
+                    <rect key="frame" x="10" y="164" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="Y0N-W7-DV5"/>
+                        <constraint firstAttribute="height" constant="80" id="jz0-Vg-hGd"/>
+                    </constraints>
+                    <state key="normal">
+                        <string key="title">Share 
+Document</string>
+                    </state>
+                    <connections>
+                        <action selector="onBtnShare:" destination="-1" eventType="touchUpInside" id="YgG-ub-hZm"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xWf-V0-hy5">
+                    <rect key="frame" x="10" y="264" width="394" height="120"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="Scg-A7-zTf"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fsl-iZ-vIJ">
+                    <rect key="frame" x="10" y="414" width="394" height="120"/>
+                    <color key="backgroundColor" red="0.3803921569" green="0.75294117650000003" blue="0.75686274509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="H62-vy-WkU"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="qrs-Pi-Vku">
+                    <rect key="frame" x="110" y="164" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="720-hC-18S"/>
+                        <constraint firstAttribute="width" constant="80" id="kDR-tk-8Ga"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                    <state key="normal">
+                        <string key="title">Share 
+UIActivity</string>
+                    </state>
+                    <connections>
+                        <action selector="onBtnShare2:" destination="-1" eventType="touchUpInside" id="QFM-ty-DDg"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="qrs-Pi-Vku" firstAttribute="bottom" secondItem="LrE-JE-WoQ" secondAttribute="bottom" id="ADk-Mc-uWv"/>
+                <constraint firstItem="qrs-Pi-Vku" firstAttribute="top" secondItem="LrE-JE-WoQ" secondAttribute="top" id="Bag-Ie-p32"/>
+                <constraint firstItem="LrE-JE-WoQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="EED-z0-I3w"/>
+                <constraint firstItem="fsl-iZ-vIJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="LN8-zz-5EG"/>
+                <constraint firstItem="xWf-V0-hy5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="OKJ-ZF-e52"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xWf-V0-hy5" secondAttribute="trailing" constant="10" id="RV6-db-rno"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fsl-iZ-vIJ" secondAttribute="trailing" constant="10" id="Wnd-VN-fvz"/>
+                <constraint firstItem="Pwo-fR-PKg" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="XQe-Y8-ArJ"/>
+                <constraint firstItem="LrE-JE-WoQ" firstAttribute="top" secondItem="Pwo-fR-PKg" secondAttribute="bottom" constant="20" id="eV2-Ha-zLS"/>
+                <constraint firstItem="Pwo-fR-PKg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="j2y-U6-lOQ"/>
+                <constraint firstItem="xWf-V0-hy5" firstAttribute="top" secondItem="LrE-JE-WoQ" secondAttribute="bottom" constant="20" id="jBU-TC-5UD"/>
+                <constraint firstItem="fsl-iZ-vIJ" firstAttribute="top" secondItem="xWf-V0-hy5" secondAttribute="bottom" constant="30" id="jNX-9e-MYt"/>
+                <constraint firstItem="qrs-Pi-Vku" firstAttribute="leading" secondItem="LrE-JE-WoQ" secondAttribute="trailing" constant="20" id="kRo-In-Mox"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="133"/>
+        </view>
+    </objects>
+</document>

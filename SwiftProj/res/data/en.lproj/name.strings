@@ -1,0 +1,12 @@
+/* 
+  name.strings
+  SwiftProj
+
+  Created by suhyup02 on 2022/01/20.
+  Copyright © 2022 garajilpung. All rights reserved.
+*/
+
+"lb-Title" = "Label";
+"btn-Title" = "Button";
+"tf-Title" = "TextField";
+"tv-Title" = "TextView";

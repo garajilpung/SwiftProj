@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StreamViewController" customModule="SwiftProj" customModuleProvider="target">
+            <connections>
+                <outlet property="lbText" destination="KjJ-k1-GAT" id="sDG-c0-8YJ"/>
+                <outlet property="tfInput" destination="bS8-FU-cJ0" id="gij-11-CDP"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Elq-ru-KvN">
+                    <rect key="frame" x="177.5" y="125" width="59" height="30"/>
+                    <state key="normal" title="Connect"/>
+                    <connections>
+                        <action selector="onBtnConnect:" destination="-1" eventType="touchUpInside" id="m7q-ty-UuY"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not Connect" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KjJ-k1-GAT">
+                    <rect key="frame" x="159" y="74" width="96.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XRb-yJ-roq">
+                    <rect key="frame" x="189" y="249" width="36" height="30"/>
+                    <state key="normal" title="Send"/>
+                    <connections>
+                        <action selector="onBtnSend:" destination="-1" eventType="touchUpInside" id="LLB-TP-xQI"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Hello Pytho3" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bS8-FU-cJ0">
+                    <rect key="frame" x="107" y="185" width="200" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="KjH-0L-F8n"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="XRb-yJ-roq" firstAttribute="top" secondItem="bS8-FU-cJ0" secondAttribute="bottom" constant="30" id="3bD-IY-bvd"/>
+                <constraint firstItem="bS8-FU-cJ0" firstAttribute="top" secondItem="Elq-ru-KvN" secondAttribute="bottom" constant="30" id="42f-er-tov"/>
+                <constraint firstItem="bS8-FU-cJ0" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="4QT-HM-8am"/>
+                <constraint firstItem="XRb-yJ-roq" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9E5-VQ-HPO"/>
+                <constraint firstItem="KjJ-k1-GAT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="H5e-p4-wFM"/>
+                <constraint firstItem="KjJ-k1-GAT" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="MUw-I0-YOc"/>
+                <constraint firstItem="Elq-ru-KvN" firstAttribute="top" secondItem="KjJ-k1-GAT" secondAttribute="bottom" constant="30" id="euI-0M-QRy"/>
+                <constraint firstItem="Elq-ru-KvN" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="poN-qw-7MA"/>
+            </constraints>
+            <point key="canvasLocation" x="125" y="128"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

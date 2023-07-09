@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MemoryLeakViewController" customModule="SwiftProj" customModuleProvider="target">
+            <connections>
+                <outlet property="vWBack" destination="Cuc-XZ-cap" id="K4f-fq-9pO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cuc-XZ-cap">
+                    <rect key="frame" x="0.0" y="84" width="414" height="778"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gbC-pe-Tpe">
+                    <rect key="frame" x="0.0" y="44" width="60" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="KoP-vR-P4I"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Btn"/>
+                    <connections>
+                        <action selector="onBtn1:" destination="-1" eventType="touchUpInside" id="P96-yC-5t0"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ywQ-ke-por">
+                    <rect key="frame" x="354" y="44" width="60" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="4fc-Ba-Faf"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Btn"/>
+                    <connections>
+                        <action selector="onBtn2:" destination="-1" eventType="touchUpInside" id="6GR-N0-lFa"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zzh-Uy-LNf">
+                    <rect key="frame" x="294" y="44" width="60" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="tsJ-qi-Rce"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Btn"/>
+                    <connections>
+                        <action selector="onBtn4:" destination="-1" eventType="touchUpInside" id="krz-U4-WQH"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gbh-GX-r8l">
+                    <rect key="frame" x="60" y="44" width="60" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="m7K-Fm-b4h"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Btn"/>
+                    <connections>
+                        <action selector="onBtn3:" destination="-1" eventType="touchUpInside" id="LII-KZ-Q1H"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Cuc-XZ-cap" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="6Nf-o2-Cur"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Cuc-XZ-cap" secondAttribute="bottom" id="6kO-Tr-gFX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Cuc-XZ-cap" secondAttribute="trailing" id="8Sf-81-WrB"/>
+                <constraint firstItem="gbh-GX-r8l" firstAttribute="leading" secondItem="gbC-pe-Tpe" secondAttribute="trailing" id="AwY-Li-5k3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ywQ-ke-por" secondAttribute="trailing" id="Q9A-S3-mgJ"/>
+                <constraint firstItem="gbC-pe-Tpe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ZEu-sK-nRr"/>
+                <constraint firstItem="Cuc-XZ-cap" firstAttribute="top" secondItem="ywQ-ke-por" secondAttribute="bottom" id="bXB-MP-b5K"/>
+                <constraint firstItem="Cuc-XZ-cap" firstAttribute="top" secondItem="gbh-GX-r8l" secondAttribute="bottom" id="bt1-dT-biv"/>
+                <constraint firstItem="ywQ-ke-por" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="f2m-ox-Zdu"/>
+                <constraint firstItem="gbC-pe-Tpe" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="mkO-yg-umb"/>
+                <constraint firstItem="gbh-GX-r8l" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="nDk-AE-Nhk"/>
+                <constraint firstItem="ywQ-ke-por" firstAttribute="leading" secondItem="zzh-Uy-LNf" secondAttribute="trailing" id="peA-OM-obw"/>
+                <constraint firstItem="Cuc-XZ-cap" firstAttribute="top" secondItem="gbC-pe-Tpe" secondAttribute="bottom" id="qYQ-Xx-oQZ"/>
+                <constraint firstItem="zzh-Uy-LNf" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="v2R-4T-pgN"/>
+                <constraint firstItem="Cuc-XZ-cap" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="vnO-wt-AiA"/>
+                <constraint firstItem="Cuc-XZ-cap" firstAttribute="top" secondItem="zzh-Uy-LNf" secondAttribute="bottom" id="xJT-rG-oHb"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="128.57142857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

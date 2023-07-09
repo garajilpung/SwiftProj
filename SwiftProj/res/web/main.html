@@ -1,0 +1,47 @@
+
+<html>
+    <head>
+        <title>Title is here</title>
+        <meta charset="utf-8"/> <meta name = "viewport" content = "width = device-width"/>
+    </head>
+    <body>
+<!--        <script>-->
+<!--            alert("Hello, world!");-->
+<!--        </script>-->
+        
+        <h2>Hello World</h2>
+        
+        <h2>Local Resource Directory</h2>
+        <img class="" src="webImg/banner_01.png" alt="banner">
+                    
+        <h2>Local Resource Root</h2>
+        <img class="" src="banner_02.png" alt="banner">
+        <br>
+        
+        <button style="width:100px;height:50px" onClick="onClick1(this)">JSHandler</button>
+        <button style="width:100px;height:50px" onClick="onClick2(this)">MHandler</button>
+        
+        <script>
+            function onClick1(id) {
+                try {
+                    var body={cmd:'scriptCallNavtive', param1:'param1Value', param2:'param2Value'};
+                    var data = JSON.stringify(body);
+                     
+                    webkit.messageHandlers.jsHandler.postMessage(data);
+                }catch(err) {
+                }
+            }
+            
+            function onClick2(id) {
+                try {
+                    var body={cmd:'scriptCallNavtive', param1:'param1Value', param2:'param2Value'};
+                    var data = JSON.stringify(body);
+                                    
+                    webkit.messageHandlers.mHandler.postMessage(data);
+                }catch(err) {
+                }
+            }
+            
+        </script>
+    </body>
+</html>

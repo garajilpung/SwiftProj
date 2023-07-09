@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SingleViewController" customModule="SwiftProj" customModuleProvider="target">
+            <connections>
+                <outlet property="btnOK" destination="Ze1-ob-OlT" id="w4B-vI-dg6"/>
+                <outlet property="btnOK2" destination="P8Z-Pd-Bjf" id="Uim-lK-5Qq"/>
+                <outlet property="btnOK3" destination="bgb-1U-Hea" id="IKc-qx-Zip"/>
+                <outlet property="btnOK4" destination="TqM-z0-ArN" id="hgP-KM-Zny"/>
+                <outlet property="btnOK5" destination="4OT-iB-T4T" id="FeD-OV-MXf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ze1-ob-OlT">
+                    <rect key="frame" x="0.0" y="816" width="83" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="TQV-Uu-Kuw"/>
+                    </constraints>
+                    <state key="normal">
+                        <string key="title">Load Xib
+DummyView
+OneView</string>
+                    </state>
+                    <connections>
+                        <action selector="onBtn1:" destination="-1" eventType="touchUpInside" id="ZFH-fe-hGc"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgb-1U-Hea">
+                    <rect key="frame" x="165.5" y="816" width="83" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="C9A-eb-ptj"/>
+                    </constraints>
+                    <state key="normal" title="Change"/>
+                    <connections>
+                        <action selector="onBtn3:" destination="-1" eventType="touchUpInside" id="oqp-ZD-lQe"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TqM-z0-ArN">
+                    <rect key="frame" x="248.5" y="816" width="82.5" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="OoP-eA-iW6"/>
+                    </constraints>
+                    <state key="normal" title="Change"/>
+                    <connections>
+                        <action selector="onBtn4:" destination="-1" eventType="touchUpInside" id="8mu-Te-fCS"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P8Z-Pd-Bjf">
+                    <rect key="frame" x="83" y="816" width="82.5" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="CjJ-Za-a51"/>
+                    </constraints>
+                    <state key="normal" title="Change"/>
+                    <connections>
+                        <action selector="onBtn2:" destination="-1" eventType="touchUpInside" id="TZP-kX-T9p"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4OT-iB-T4T">
+                    <rect key="frame" x="331" y="816" width="83" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="Bam-je-pnX"/>
+                    </constraints>
+                    <state key="normal" title="Change"/>
+                    <connections>
+                        <action selector="onBtn5:" destination="-1" eventType="touchUpInside" id="aya-el-Yr0"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="TqM-z0-ArN" secondAttribute="bottom" id="1Oq-Wd-Uaa"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4OT-iB-T4T" secondAttribute="trailing" id="JF2-Jz-z0h"/>
+                <constraint firstAttribute="bottom" secondItem="4OT-iB-T4T" secondAttribute="bottom" id="XRB-aB-n8f"/>
+                <constraint firstItem="bgb-1U-Hea" firstAttribute="leading" secondItem="P8Z-Pd-Bjf" secondAttribute="trailing" id="Yur-VA-808"/>
+                <constraint firstItem="4OT-iB-T4T" firstAttribute="width" secondItem="Ze1-ob-OlT" secondAttribute="width" id="drm-e9-2Yc"/>
+                <constraint firstAttribute="bottom" secondItem="bgb-1U-Hea" secondAttribute="bottom" id="etl-lF-Dyx"/>
+                <constraint firstAttribute="bottom" secondItem="Ze1-ob-OlT" secondAttribute="bottom" id="h7N-6c-HXT"/>
+                <constraint firstItem="bgb-1U-Hea" firstAttribute="width" secondItem="Ze1-ob-OlT" secondAttribute="width" id="i2o-Gz-x8p"/>
+                <constraint firstAttribute="bottom" secondItem="P8Z-Pd-Bjf" secondAttribute="bottom" id="lqm-e3-IUx"/>
+                <constraint firstItem="P8Z-Pd-Bjf" firstAttribute="width" secondItem="Ze1-ob-OlT" secondAttribute="width" id="ovV-z8-3cf"/>
+                <constraint firstItem="Ze1-ob-OlT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="tOc-YY-i8d"/>
+                <constraint firstItem="TqM-z0-ArN" firstAttribute="leading" secondItem="bgb-1U-Hea" secondAttribute="trailing" id="tUT-iY-BLg"/>
+                <constraint firstItem="4OT-iB-T4T" firstAttribute="leading" secondItem="TqM-z0-ArN" secondAttribute="trailing" id="ug9-fk-6pk"/>
+                <constraint firstItem="TqM-z0-ArN" firstAttribute="width" secondItem="Ze1-ob-OlT" secondAttribute="width" id="ur2-Yd-zM3"/>
+                <constraint firstItem="P8Z-Pd-Bjf" firstAttribute="leading" secondItem="Ze1-ob-OlT" secondAttribute="trailing" id="zUr-tH-tJL"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="153.34821428571428"/>
+        </view>
+    </objects>
+</document>

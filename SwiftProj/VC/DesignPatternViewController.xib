@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DesignPatternViewController" customModule="SwiftProj" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NET-gz-p2z">
+                    <rect key="frame" x="20" y="64" width="374" height="30"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="MVC"/>
+                    <connections>
+                        <action selector="onBtnMVC:" destination="-1" eventType="touchUpInside" id="uUN-Yp-DA2"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEP-ac-roy">
+                    <rect key="frame" x="20" y="114" width="374" height="30"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="MVP"/>
+                    <connections>
+                        <action selector="onBtnMVP:" destination="-1" eventType="touchUpInside" id="FQ7-vp-UfS"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vV0-wX-hBF">
+                    <rect key="frame" x="20" y="164" width="374" height="30"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="MVVM"/>
+                    <connections>
+                        <action selector="onBtnMVVM:" destination="-1" eventType="touchUpInside" id="pHy-bf-Z4k"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uEP-ac-roy" secondAttribute="trailing" constant="20" id="71K-lv-8Di"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vV0-wX-hBF" secondAttribute="trailing" constant="20" id="J9W-rb-GVa"/>
+                <constraint firstItem="NET-gz-p2z" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="UeF-cW-COj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="NET-gz-p2z" secondAttribute="trailing" constant="20" id="YTK-nl-kke"/>
+                <constraint firstItem="vV0-wX-hBF" firstAttribute="top" secondItem="uEP-ac-roy" secondAttribute="bottom" constant="20" id="erV-EX-zD7"/>
+                <constraint firstItem="uEP-ac-roy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="mCy-H6-uNU"/>
+                <constraint firstItem="NET-gz-p2z" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="onB-QE-wom"/>
+                <constraint firstItem="uEP-ac-roy" firstAttribute="top" secondItem="NET-gz-p2z" secondAttribute="bottom" constant="20" id="rWZ-S7-iQ5"/>
+                <constraint firstItem="vV0-wX-hBF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="wSm-Dd-Q9W"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="129"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

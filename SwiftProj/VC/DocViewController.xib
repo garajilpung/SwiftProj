@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DocViewController" customModule="SwiftProj" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Yw-kq-4Km">
+                    <rect key="frame" x="184.5" y="64" width="45" height="30"/>
+                    <state key="normal" title="import"/>
+                    <connections>
+                        <action selector="onBtnDocVC:" destination="-1" eventType="touchUpInside" id="wRw-pE-gjn"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4yW-NQ-sKI">
+                    <rect key="frame" x="189.5" y="114" width="35" height="30"/>
+                    <state key="normal" title="open"/>
+                    <connections>
+                        <action selector="onBtnDocVC:" destination="-1" eventType="touchUpInside" id="YXb-VY-Xnl"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4mD-vq-pgN">
+                    <rect key="frame" x="151" y="164" width="112" height="30"/>
+                    <state key="normal" title="exportToService"/>
+                    <connections>
+                        <action selector="onBtnDocVC:" destination="-1" eventType="touchUpInside" id="meR-jV-Ovd"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yoy-UK-6Ga">
+                    <rect key="frame" x="155" y="214" width="104" height="30"/>
+                    <state key="normal" title="moveToService"/>
+                    <connections>
+                        <action selector="onBtnDocVC:" destination="-1" eventType="touchUpInside" id="5jY-dC-efT"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="4Yw-kq-4Km" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="1mj-5P-pzl"/>
+                <constraint firstItem="Yoy-UK-6Ga" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="IAI-im-2DP"/>
+                <constraint firstItem="4mD-vq-pgN" firstAttribute="top" secondItem="4yW-NQ-sKI" secondAttribute="bottom" constant="20" id="Pw4-H4-2n6"/>
+                <constraint firstItem="4yW-NQ-sKI" firstAttribute="top" secondItem="4Yw-kq-4Km" secondAttribute="bottom" constant="20" id="Wyl-lk-mCw"/>
+                <constraint firstItem="4Yw-kq-4Km" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="XlT-3r-vfh"/>
+                <constraint firstItem="Yoy-UK-6Ga" firstAttribute="top" secondItem="4mD-vq-pgN" secondAttribute="bottom" constant="20" id="c6E-GQ-Tnm"/>
+                <constraint firstItem="4mD-vq-pgN" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="iJj-Sd-LyP"/>
+                <constraint firstItem="4yW-NQ-sKI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="yA6-uq-zqF"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="132" y="148"/>
+        </view>
+    </objects>
+</document>

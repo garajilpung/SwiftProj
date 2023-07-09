@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AnimationViewController" customModule="SwiftProj" customModuleProvider="target">
+            <connections>
+                <outlet property="lb1" destination="CCk-zN-mol" id="j1t-Q4-wUV"/>
+                <outlet property="lb2" destination="obA-IJ-OWp" id="0uX-Bc-M9h"/>
+                <outlet property="lc_lb2Y" destination="se9-4A-OIQ" id="K9U-Dd-fJH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ani_Constant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="obA-IJ-OWp">
+                    <rect key="frame" x="303" y="64" width="101" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPQ-wz-oaD">
+                    <rect key="frame" x="10" y="762" width="89" height="30"/>
+                    <state key="normal" title="Frame_Reset"/>
+                    <connections>
+                        <action selector="onBtn_FReset:" destination="-1" eventType="touchUpInside" id="dh7-a5-P1O"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eE4-9o-LgW">
+                    <rect key="frame" x="10" y="812" width="72" height="30"/>
+                    <state key="normal" title="Frame_Ani"/>
+                    <connections>
+                        <action selector="onBtn_FAni:" destination="-1" eventType="touchUpInside" id="IMv-CK-qmc"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7HT-Wa-7nx">
+                    <rect key="frame" x="296" y="762" width="108" height="30"/>
+                    <state key="normal" title="Constant_Reset"/>
+                    <connections>
+                        <action selector="onBtn_CReset:" destination="-1" eventType="touchUpInside" id="WtU-cb-k6q"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uOt-yX-R3H">
+                    <rect key="frame" x="313" y="812" width="91" height="30"/>
+                    <state key="normal" title="Constant_Ani"/>
+                    <connections>
+                        <action selector="onBtn_CAni:" destination="-1" eventType="touchUpInside" id="YcO-ii-zca"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ani_Frame" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CCk-zN-mol">
+                    <rect key="frame" x="10" y="64" width="80" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7HT-Wa-7nx" secondAttribute="trailing" constant="10" id="26c-56-BHd"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="eE4-9o-LgW" secondAttribute="bottom" constant="20" id="5y2-ns-YAI"/>
+                <constraint firstItem="eE4-9o-LgW" firstAttribute="top" secondItem="sPQ-wz-oaD" secondAttribute="bottom" constant="20" id="7ru-PE-1fb"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uOt-yX-R3H" secondAttribute="trailing" constant="10" id="99m-SA-qJP"/>
+                <constraint firstItem="uOt-yX-R3H" firstAttribute="top" secondItem="7HT-Wa-7nx" secondAttribute="bottom" constant="20" id="A7V-8N-Im8"/>
+                <constraint firstItem="CCk-zN-mol" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="AWm-cZ-fHV"/>
+                <constraint firstItem="eE4-9o-LgW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="NEB-5Y-YWk"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="uOt-yX-R3H" secondAttribute="bottom" constant="20" id="RMm-7O-zUm"/>
+                <constraint firstItem="sPQ-wz-oaD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="WXa-w8-1QW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="obA-IJ-OWp" secondAttribute="trailing" constant="10" id="htJ-Qq-EsJ"/>
+                <constraint firstItem="CCk-zN-mol" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="li2-al-vDv"/>
+                <constraint firstItem="obA-IJ-OWp" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="se9-4A-OIQ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="132" y="154"/>
+        </view>
+    </objects>
+</document>

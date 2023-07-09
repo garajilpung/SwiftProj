@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Af4-eA-RB4">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Jwl-YT-RYz">
+            <objects>
+                <navigationController storyboardIdentifier="navi2VC" id="Af4-eA-RB4" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ue0-on-SiR">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="CNT-PC-tLI" kind="relationship" relationship="rootViewController" id="dIR-Ok-bEd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LDC-e4-ck8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="557" y="118"/>
+        </scene>
+        <!--WebView-->
+        <scene sceneID="bqs-pN-m9D">
+            <objects>
+                <viewController storyboardIdentifier="wv2VC" title="WebView" id="CNT-PC-tLI" customClass="WebView2ViewController" customModule="SwiftProj" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lKs-Jn-Oex">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Du-mb-yIS">
+                                <rect key="frame" x="0.0" y="88" width="414" height="734"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uwu-Nz-qzz">
+                                <rect key="frame" x="0.0" y="822" width="414" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="uhx-bw-vct"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="onBtn:" destination="CNT-PC-tLI" eventType="touchUpInside" id="lPI-sw-1cj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TpJ-p4-uhE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TpJ-p4-uhE" firstAttribute="bottom" secondItem="Uwu-Nz-qzz" secondAttribute="bottom" id="8F4-VC-JnK"/>
+                            <constraint firstItem="Uwu-Nz-qzz" firstAttribute="leading" secondItem="TpJ-p4-uhE" secondAttribute="leading" id="BgV-uT-1Mi"/>
+                            <constraint firstItem="1Du-mb-yIS" firstAttribute="top" secondItem="TpJ-p4-uhE" secondAttribute="top" id="D4I-6F-d5q"/>
+                            <constraint firstItem="TpJ-p4-uhE" firstAttribute="trailing" secondItem="Uwu-Nz-qzz" secondAttribute="trailing" id="Flw-0e-oA0"/>
+                            <constraint firstItem="Uwu-Nz-qzz" firstAttribute="top" secondItem="1Du-mb-yIS" secondAttribute="bottom" id="KNY-MK-Gt9"/>
+                            <constraint firstItem="TpJ-p4-uhE" firstAttribute="trailing" secondItem="1Du-mb-yIS" secondAttribute="trailing" id="YDy-JI-kyb"/>
+                            <constraint firstItem="1Du-mb-yIS" firstAttribute="leading" secondItem="TpJ-p4-uhE" secondAttribute="leading" id="rvF-6d-sK9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="WebView" id="lQ1-hz-TKM"/>
+                    <connections>
+                        <outlet property="web" destination="1Du-mb-yIS" id="JsP-TA-7og"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j0d-OZ-oDf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1411.5942028985507" y="117.85714285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
