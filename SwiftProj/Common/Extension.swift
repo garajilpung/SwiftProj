@@ -8,6 +8,9 @@
 
 import Foundation
 import UIKit
+import ImageIO
+import CoreServices
+import WebKit
 
 // UIApplication 상속받아 구현
 // main.swift 파일 추가 -> 아래 구문 추가
@@ -120,6 +123,8 @@ extension Dictionary {
 }
 
 extension UIWindow {
+    
+    // 이 함수의 문제 iOS 15이상에는 살아있는 윈도우만 캐치하기에 keyWindow에 접근할려면 iOS15 부분을 주석 처리해야 한다.
     static var key: UIWindow? {
         if #available(iOS 15, *) {
             
@@ -133,17 +138,23 @@ extension UIWindow {
                 .flatMap({ $0 as? UIWindowScene })?.windows
                 // Finally, keep only the key window
                 .first(where: \.isKeyWindow)
-            
-            
-            
-            
-            
         }
         else if #available(iOS 13, *) {
             return UIApplication.shared.windows.first { $0.isKeyWindow }
         } else {
             return UIApplication.shared.keyWindow
         }
+    }
+}
+
+extension WKWebView {
+    
+    func addUserAgent(_ custom:String) {
+        guard let userAgent = self.value(forKey: "userAgent") else {
+            return
+        }
+        
+        self.customUserAgent = "\(userAgent) \(custom)"
     }
 }
 
@@ -220,9 +231,154 @@ fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
 
 extension UIImage {
     
+    @discardableResult public class func makeTiffWithData(_ images:[UIImage]) -> Data?{
+        let dic : [String: Any] = [
+                                   kCGImagePropertyOrientation as String : 1, // up
+                                   kCGImagePropertyHasAlpha as String : false,
+                                   kCGImagePropertyDepth as String: 1
+        ]
+        
+        let retData : CFMutableData = CFDataCreateMutable(kCFAllocatorDefault, 0)
+        
+        guard let myImageDest = CGImageDestinationCreateWithData(retData, kUTTypeTIFF as CFString, images.count, nil) else {
+            return nil
+        }
+        
+        for image in images {
+            CGImageDestinationAddImage(myImageDest, image.cgImage!, dic as CFDictionary)
+        }
+        
+        CGImageDestinationFinalize(myImageDest)
+        
+        let datdd = retData as Data
+        DFT_TRACE_PRINT(output: "data length \(datdd.count)")
+        
+        
+        return retData as Data
+    }
+    
+    
+    @discardableResult public class func makeTiffWithURL(_ images:[UIImage], _ url:URL) -> Bool{
+        let tiffOptions: Dictionary<String, Any> = [kCGImagePropertyTIFFCompression as String : 5,
+                                                    kCGImagePropertyTIFFXResolution as String : images[0].cgImage!.width,
+                                                    kCGImagePropertyTIFFYResolution as String : images[0].cgImage!.height,
+        ] // 이건 tiff 일때 안먹힘, 아마도 파일 읽기에서만 적용되는 것 같다. 압축도 안된다.
+        
+        let dic : [String: Any] = [
+                                   kCGImagePropertyOrientation as String : 1, // up
+                                   kCGImagePropertyHasAlpha as String : true, // 이건 먹힘
+//                                   kCGImageDestinationLossyCompressionQuality as String: 0.2, // 이건 tiff 일때 안먹힘, 이것은 JPEG일때만 사용이 가능하다.
+                                   kCGImagePropertyTIFFDictionary as String : tiffOptions,
+                                   kCGImagePropertyDepth as String: 1
+        ]
+        
+        guard let myImageDest = CGImageDestinationCreateWithURL(url as CFURL, kUTTypeTIFF as CFString, images.count, nil) else {
+            return false
+        }
+        
+        for image in images {
+            CGImageDestinationAddImage(myImageDest, image.cgImage!, dic as CFDictionary)
+        }
+        
+        CGImageDestinationFinalize(myImageDest)
+        
+        return true
+    }
+    
+    public class func tiffImageWithURL(_ name: String) -> UIImage? {
+        
+        guard let ret = tiffImagesWithURL(name) else {
+            return nil
+        }
+        
+        return UIImage.animatedImage(with: ret, duration: Double(ret.count) * 0.5)
+    }
+    
+    public class func tiffImageWithName(_ name: String) -> UIImage? {
+        
+        guard let ret = tiffImagesWithName(name) else {
+            return nil
+        }
+        
+        return UIImage.animatedImage(with: ret, duration: Double(ret.count) * 0.5)
+    }
+    
+    public class func tiffImagesWithName(_ name: String) -> [UIImage]? {
+        guard let bundleURL = Bundle.main
+            .url(forResource: name, withExtension: "tiff") else {
+                DFT_TRACE_PRINT(output: "SwiftGif: This image named \"\(name)\" does not exist")
+                return nil
+        }
+        guard let imageData = try? Data(contentsOf: bundleURL) else {
+            DFT_TRACE_PRINT(output: "SwiftGif: Cannot turn image named \"\(name)\" into NSData")
+            return nil
+        }
+        
+        return tiffImagesWithData(imageData)
+    }
+    
+    public class func tiffImagesWithURL(_ gifUrl:String) -> [UIImage]? {
+        guard let bundleURL:URL = URL(string: gifUrl)
+            else {
+                DFT_TRACE_PRINT(output: "image named \"\(gifUrl)\" doesn't exist")
+                return nil
+        }
+        guard let imageData = try? Data(contentsOf: bundleURL) else {
+            DFT_TRACE_PRINT(output: "image named \"\(gifUrl)\" into NSData")
+            return nil
+        }
+        
+        DFT_TRACE_PRINT(output: "imageData count \(imageData.count)")
+        
+            
+        return tiffImagesWithData(imageData)
+    }
+    
+    class func imagesWithSource(_ source: CGImageSource) -> [UIImage]? {
+        let count = CGImageSourceGetCount(source)
+        var images = [CGImage]()
+        
+        if(count < 1) {
+            return nil
+        }
+        
+        for i in 0..<count {
+            if let image = CGImageSourceCreateImageAtIndex(source, i, nil) {
+                images.append(image)
+            }
+        }
+        
+        var frames = [UIImage]()
+        var frame: UIImage
+        
+        for i in 0..<count {
+            frame = UIImage(cgImage: images[Int(i)])
+            frames.append(frame)
+        }
+        
+        return frames
+    }
+    
+    public class func tiffImageWithData(_ data: Data) -> UIImage? {
+        guard let ret = tiffImagesWithData(data) else {
+            return nil
+        }
+        
+        return UIImage.animatedImage(with: ret, duration: Double(ret.count) * 0.5)
+    }
+    
+    public class func tiffImagesWithData(_ data: Data) -> [UIImage]? {
+        guard let source = CGImageSourceCreateWithData(data as CFData, nil) else {
+            DFT_TRACE_PRINT(output: "image doesn't exist")
+            return nil
+        }
+        
+        return UIImage.imagesWithSource(source)
+    }
+    
     public class func gifImageWithData(_ data: Data) -> UIImage? {
         guard let source = CGImageSourceCreateWithData(data as CFData, nil) else {
-            print("image doesn't exist")
+            DFT_TRACE_PRINT(output: "image doesn't exist")
             return nil
         }
         
@@ -232,11 +388,11 @@ extension UIImage {
     public class func gifImageWithURL(_ gifUrl:String) -> UIImage? {
         guard let bundleURL:URL = URL(string: gifUrl)
             else {
-                print("image named \"\(gifUrl)\" doesn't exist")
+            DFT_TRACE_PRINT(output: "image named \"\(gifUrl)\" doesn't exist")
                 return nil
         }
         guard let imageData = try? Data(contentsOf: bundleURL) else {
-            print("image named \"\(gifUrl)\" into NSData")
+            DFT_TRACE_PRINT(output: "image named \"\(gifUrl)\" into NSData")
             return nil
         }
         
@@ -246,11 +402,11 @@ extension UIImage {
     public class func gifImageWithName(_ name: String) -> UIImage? {
         guard let bundleURL = Bundle.main
             .url(forResource: name, withExtension: "gif") else {
-                print("SwiftGif: This image named \"\(name)\" does not exist")
+            DFT_TRACE_PRINT(output: "SwiftGif: This image named \"\(name)\" does not exist")
                 return nil
         }
         guard let imageData = try? Data(contentsOf: bundleURL) else {
-            print("SwiftGif: Cannot turn image named \"\(name)\" into NSData")
+            DFT_TRACE_PRINT(output: "SwiftGif: Cannot turn image named \"\(name)\" into NSData")
             return nil
         }
         

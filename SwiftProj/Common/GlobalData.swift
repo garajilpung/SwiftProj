@@ -29,9 +29,25 @@ class GlobalData {
         Static.instance = nil
     }
     
-    let screenWidth : CGFloat = UIScreen.main.bounds.size.width
-    let screenHeight : CGFloat = UIScreen.main.bounds.size.height
+    var screenWidth : CGFloat = UIScreen.main.bounds.size.width
+    var screenHeight : CGFloat = UIScreen.main.bounds.size.height
     
+    var appVersion : String? {
+        guard let dictionary = Bundle.main.infoDictionary,
+            let version = dictionary["CFBundleShortVersionString"] as? String else { return nil }
+
+        return version
+    }
+    
+    var buildVersion : String? {
+        guard let dictionary = Bundle.main.infoDictionary,
+            let build = dictionary["CFBundleVersion"] as? String else { return nil }
+
+        return build
+    }
+    
+    let osVersion : String = UIDevice.current.systemVersion
+        
     var dataCookie : Array<HTTPCookie>?
     
     // 각각의 위치에서 쿠키값을 가져온다.

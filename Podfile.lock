@@ -14,27 +14,59 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - Charts (3.6.0):
-    - Charts/Core (= 3.6.0)
-  - Charts/Core (3.6.0)
+  - AssetsPickerViewController (2.5.7):
+    - Device
+    - Dimmer
+    - FadeView
+    - SnapKit
+    - SwiftARGB
+    - TinyLog
+  - Device (3.4.0)
+  - Dimmer (2.2.0):
+    - FadeView (~> 2.0)
+    - SnapKit
+    - UIViewKVO (~> 2.0)
+  - FadeView (2.0.0)
+  - lottie-ios (3.2.3)
+  - SnapKit (4.2.0)
+  - SwiftARGB (2.0.0)
+  - TinyLog (2.0.7)
+  - UIViewKVO (2.0.0)
   - Zip (2.1.2)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
-  - Charts
+  - AssetsPickerViewController (~> 2.0)
+  - lottie-ios
   - Zip (~> 2.1)
 
 SPEC REPOS:
   trunk:
     - AFNetworking
-    - Charts
+    - AssetsPickerViewController
+    - Device
+    - Dimmer
+    - FadeView
+    - lottie-ios
+    - SnapKit
+    - SwiftARGB
+    - TinyLog
+    - UIViewKVO
     - Zip
 
 SPEC CHECKSUMS:
-  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  Charts: b1e3a1f5a1c9ba5394438ca3b91bd8c9076310af
+  AFNetworking: cb604b1c2bded0871f5f61f5d53653739e841d6b
+  AssetsPickerViewController: 93142e1f104320c82985ad09b28b877ecd97e883
+  Device: 33a111aa0ce8efe0140b2e4174a6f938a5278921
+  Dimmer: 55721e2f218f965474b8319d4457ed76e5e59ef0
+  FadeView: 80197da2fbee5382b178127e8c5f988a35eef018
+  lottie-ios: c058aeafa76daa4cf64d773554bccc8385d0150e
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SwiftARGB: 8727cfcdcfe8709e707a2391f1d5802a7c40dcad
+  TinyLog: 073a9abfd44a944886d5d07aa49cbba5ef192335
+  UIViewKVO: 091f9e020d69e73c4bf5e5ef61cde7bff1c24bbf
   Zip: b3fef584b147b6e582b2256a9815c897d60ddc67
 
-PODFILE CHECKSUM: 1948cb34657018b9484cfd181a8287fdc5e49e58
+PODFILE CHECKSUM: fa19e7090f0d493c487466585316972da91b7f46
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.12.0

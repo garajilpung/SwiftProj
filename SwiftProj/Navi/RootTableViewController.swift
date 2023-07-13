@@ -66,6 +66,9 @@ class RootTableViewController: UITableViewController {
         // loading gif
         let view = UIView(frame: CGRect(x: 0, y: 0, width: GlobalData.sharedInstance.screenWidth, height: GlobalData.sharedInstance.screenHeight))
         view.loadLoading()
+        
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(deviceOrientationDidChange), name: UIDevice.orientationDidChangeNotification , object: nil)
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -354,5 +357,14 @@ class RootTableViewController: UITableViewController {
         self.present(vc, animated: true) {
             
         }
+    }
+    
+    
+    
+    @objc func deviceOrientationDidChange() {
+        let frame = self.view.frame
+        
+        DFT_TRACE_PRINT(output: "\(frame.size.width)][ \(frame.size.height)")
+        
     }
 }

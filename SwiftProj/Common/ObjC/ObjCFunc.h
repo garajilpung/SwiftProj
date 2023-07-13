@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -16,6 +17,9 @@ NS_ASSUME_NONNULL_BEGIN
 // 그리고 App-Name-Bridging-Header.h 에서 Object-c 파일 헤더 추가
 // #import "objc.h"
 // 그리고 사용한다.
+
+
+
 @interface ObjCFunc : NSObject
 
 @property(strong, nonatomic) NSString *aStr;
@@ -23,6 +27,17 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (void)log_ObjC:(NSString*)str;
 
++ (BOOL) makeTiffImages:(NSMutableArray<UIImage*>*)images withURL:(NSURL*)url;
+
++ (NSArray*)getRGBAsFromImage:(UIImage*)image atX:(int)x andY:(int)y count:(int)count;
+
+
++ (void) makeGrayTiffUIImage:(UIImage *)uiImage toTiff:(NSString *)file withThreshold:(float)threshold;
+
++ (void) makeTiffRGBAUIImage:(NSArray<UIImage*> *)uiImages toTiff:(NSString *)file;
 @end
+
+
+
 
 NS_ASSUME_NONNULL_END

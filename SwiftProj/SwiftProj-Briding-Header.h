@@ -20,4 +20,28 @@ typedef struct {
 } __attribute__((__packed__)) HeaderStruct;
 
 
+// tiff-iOS lib 관련
+#import "tiff_ios.h"
+#import "TIFFFieldTagTypes.h"
+#import "TIFFFieldTypes.h"
+#import "TIFFFileDirectory.h"
+#import "TIFFFileDirectoryEntry.h"
+#import "TIFFImage.h"
+#import "TIFFImageWindow.h"
+#import "TIFFRasters.h"
+#import "TIFFReader.h"
+#import "TIFFWriter.h"
+#import "TIFFCompressionDecoder.h"
+#import "TIFFCompressionEncoder.h"
+#import "TIFFDeflateCompression.h"
+#import "TIFFLZWCompression.h"
+#import "TIFFPackbitsCompression.h"
+#import "TIFFRawCompression.h"
+#import "TIFFUnsupportedCompression.h"
+#import "TIFFByteReader.h"
+#import "TIFFByteWriter.h"
+#import "TIFFIOUtils.h"
+#import "TIFFConstants.h"
+#import "TIFFPredictor.h"
+
 #endif /* SwiftProj_Briding_Header_h */

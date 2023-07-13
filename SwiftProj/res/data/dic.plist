@@ -290,7 +290,7 @@
 			<key>target</key>
 			<string>Object</string>
 			<key>actID</key>
-			<string>wkwvsVC</string>
+			<string>none</string>
 		</dict>
 		<dict>
 			<key>index</key>
@@ -632,7 +632,7 @@
 			<key>index</key>
 			<string>52</string>
 			<key>title</key>
-			<string>RadiusView</string>
+			<string>Radius&amp;Gradient</string>
 			<key>actType</key>
 			<string>push</string>
 			<key>target</key>
@@ -675,6 +675,66 @@
 			<string>Object</string>
 			<key>actID</key>
 			<string>TIFFViewController</string>
+		</dict>
+		<dict>
+			<key>index</key>
+			<string>56</string>
+			<key>title</key>
+			<string>CallApp, Sheme</string>
+			<key>actType</key>
+			<string>push</string>
+			<key>target</key>
+			<string>Object</string>
+			<key>actID</key>
+			<string>CallAppShemeViewController</string>
+		</dict>
+		<dict>
+			<key>index</key>
+			<string>57</string>
+			<key>title</key>
+			<string>DatePicker</string>
+			<key>actType</key>
+			<string>push</string>
+			<key>target</key>
+			<string>Object</string>
+			<key>actID</key>
+			<string>DatePickerViewController</string>
+		</dict>
+		<dict>
+			<key>index</key>
+			<string>58</string>
+			<key>title</key>
+			<string>Lottie</string>
+			<key>actType</key>
+			<string>push</string>
+			<key>target</key>
+			<string>Object</string>
+			<key>actID</key>
+			<string>LottieViewController</string>
+		</dict>
+		<dict>
+			<key>index</key>
+			<string>59</string>
+			<key>title</key>
+			<string>Excel</string>
+			<key>actType</key>
+			<string>push</string>
+			<key>target</key>
+			<string>Object</string>
+			<key>actID</key>
+			<string>ExcelViewerViewController</string>
+		</dict>
+		<dict>
+			<key>index</key>
+			<string>60</string>
+			<key>title</key>
+			<string>Web &amp; LocalData</string>
+			<key>actType</key>
+			<string>push</string>
+			<key>target</key>
+			<string>Object</string>
+			<key>actID</key>
+			<string>WebInLocalViewController</string>
 		</dict>
 	</array>
 	<key>section2</key>

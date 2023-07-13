@@ -17,16 +17,55 @@
 		84E073F123F2DB5E009F89B0 /* SwiftProjTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E073F023F2DB5E009F89B0 /* SwiftProjTests.swift */; };
 		84E073FC23F2DB5E009F89B0 /* SwiftProjUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E073FB23F2DB5E009F89B0 /* SwiftProjUITests.swift */; };
 		8B1A8DAC28338A4800F85971 /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B1A8DAB28338A4800F85971 /* loading.gif */; };
+		8B20CD3E286D7D0F0062C2D3 /* CallAppShemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B20CD3C286D7D0F0062C2D3 /* CallAppShemeViewController.swift */; };
+		8B20CD3F286D7D0F0062C2D3 /* CallAppShemeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B20CD3D286D7D0F0062C2D3 /* CallAppShemeViewController.xib */; };
+		8B20CD41286D9C910062C2D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B20CD40286D9C910062C2D3 /* SceneDelegate.swift */; };
+		8B20CD44286EAFD50062C2D3 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B20CD42286EAFD50062C2D3 /* DatePickerViewController.swift */; };
+		8B20CD45286EAFD50062C2D3 /* DatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B20CD43286EAFD50062C2D3 /* DatePickerViewController.xib */; };
+		8B20CD49286EC1210062C2D3 /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B20CD48286EC1210062C2D3 /* DatePickerView.swift */; };
+		8B20CD4B286EC1610062C2D3 /* DatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B20CD4A286EC1610062C2D3 /* DatePickerView.xib */; };
 		8B22CA3F284F0EF6002A58B8 /* ObjCFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B22CA3E284F0EF6002A58B8 /* ObjCFunc.m */; };
 		8B31CA822859632B008F94BE /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B31CA812859632A008F94BE /* Observable.swift */; };
 		8B400F8425AAFB0200F0C079 /* TwinWebShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B400F8225AAFB0200F0C079 /* TwinWebShareViewController.swift */; };
 		8B400F8525AAFB0200F0C079 /* TwinWebShareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B400F8325AAFB0200F0C079 /* TwinWebShareViewController.xib */; };
+		8B43D2792872D4CB00EC7D8F /* lottie-nft.json in Resources */ = {isa = PBXBuildFile; fileRef = 8B43D2782872D4CB00EC7D8F /* lottie-nft.json */; };
+		8B54ED31288A2F22003709B8 /* libtiff.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B54ED2C288A2F22003709B8 /* libtiff.a */; };
+		8B54ED32288A2F22003709B8 /* libtiffxx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B54ED2E288A2F22003709B8 /* libtiffxx.a */; };
+		8B54ED3E288A30BE003709B8 /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B54ED38288A30BE003709B8 /* libjpeg.a */; };
+		8B54ED3F288A30BE003709B8 /* libpng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B54ED3A288A30BE003709B8 /* libpng.a */; };
+		8B5664DC287C0A1C0012FBD8 /* TIFFFieldTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5664AF287C0A1A0012FBD8 /* TIFFFieldTypes.m */; };
+		8B5664DD287C0A1C0012FBD8 /* TIFFReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5664B0287C0A1A0012FBD8 /* TIFFReader.m */; };
+		8B5664DE287C0A1C0012FBD8 /* TIFFFileDirectoryEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5664B1287C0A1A0012FBD8 /* TIFFFileDirectoryEntry.m */; };
+		8B5664DF287C0A1C0012FBD8 /* TIFFFileDirectory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5664B2287C0A1A0012FBD8 /* TIFFFileDirectory.m */; };
+		8B5664E0287C0A1C0012FBD8 /* TIFFFieldTagTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5664B4287C0A1A0012FBD8 /* TIFFFieldTagTypes.m */; };
+		8B5664E1287C0A1C0012FBD8 /* TIFFDeflateCompression.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5664B7287C0A1B0012FBD8 /* TIFFDeflateCompression.m */; };
+		8B5664E2287C0A1C0012FBD8 /* TIFFLZWCompression.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5664BA287C0A1B0012FBD8 /* TIFFLZWCompression.m */; };
+		8B5664E3287C0A1C0012FBD8 /* TIFFPackbitsCompression.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5664BB287C0A1B0012FBD8 /* TIFFPackbitsCompression.m */; };
+		8B5664E4287C0A1C0012FBD8 /* TIFFRawCompression.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5664BF287C0A1B0012FBD8 /* TIFFRawCompression.m */; };
+		8B5664E5287C0A1C0012FBD8 /* TIFFUnsupportedCompression.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5664C3287C0A1B0012FBD8 /* TIFFUnsupportedCompression.m */; };
+		8B5664E6287C0A1C0012FBD8 /* TIFFPredictor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5664C4287C0A1B0012FBD8 /* TIFFPredictor.m */; };
+		8B5664E7287C0A1C0012FBD8 /* TIFFByteReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5664C8287C0A1B0012FBD8 /* TIFFByteReader.m */; };
+		8B5664E8287C0A1C0012FBD8 /* TIFFIOUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5664CA287C0A1B0012FBD8 /* TIFFIOUtils.m */; };
+		8B5664E9287C0A1C0012FBD8 /* TIFFByteWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5664CC287C0A1B0012FBD8 /* TIFFByteWriter.m */; };
+		8B5664EA287C0A1C0012FBD8 /* TIFFRasters.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5664D0287C0A1B0012FBD8 /* TIFFRasters.m */; };
+		8B5664EB287C0A1C0012FBD8 /* TIFFConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5664D3287C0A1B0012FBD8 /* TIFFConstants.m */; };
+		8B5664EC287C0A1C0012FBD8 /* TIFFImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5664D5287C0A1B0012FBD8 /* TIFFImage.m */; };
+		8B5664ED287C0A1C0012FBD8 /* TIFFImageWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5664D7287C0A1C0012FBD8 /* TIFFImageWindow.m */; };
+		8B5664EE287C0A1C0012FBD8 /* TIFFWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5664D8287C0A1C0012FBD8 /* TIFFWriter.m */; };
+		8B5664F2287E42F20012FBD8 /* ExcelViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5664F0287E42F10012FBD8 /* ExcelViewerViewController.swift */; };
+		8B5664F3287E42F20012FBD8 /* ExcelViewerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B5664F1287E42F10012FBD8 /* ExcelViewerViewController.xib */; };
+		8B5664F4287E45B70012FBD8 /* excelView.xlsx in Resources */ = {isa = PBXBuildFile; fileRef = 8B5664EF287E42C70012FBD8 /* excelView.xlsx */; };
 		8B5C73652862D72700648643 /* CustomNaviBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B5C73642862D72700648643 /* CustomNaviBar.xib */; };
 		8B5C73682862DEF500648643 /* CViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5C73662862DEF500648643 /* CViewController.swift */; };
 		8B5C73692862DEF500648643 /* CViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B5C73672862DEF500648643 /* CViewController.xib */; };
 		8B5C736B2862FEE000648643 /* CustomNaviBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5C736A2862FEE000648643 /* CustomNaviBar.swift */; };
+		8B729C3F2872C91500D7A848 /* LottieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B729C3D2872C91500D7A848 /* LottieViewController.swift */; };
+		8B729C402872C91500D7A848 /* LottieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B729C3E2872C91500D7A848 /* LottieViewController.xib */; };
+		8B88B7E1287E9E5D00F651BC /* WebInLocalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B88B7DF287E9E5D00F651BC /* WebInLocalViewController.swift */; };
+		8B88B7E2287E9E5D00F651BC /* WebInLocalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B88B7E0287E9E5D00F651BC /* WebInLocalViewController.xib */; };
 		8BDDAFBC2585CAE9003EE57F /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDDAFBB2585CAE9003EE57F /* SettingViewController.swift */; };
 		8BDDAFC12585CFD7003EE57F /* CommonDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDDAFC02585CFD7003EE57F /* CommonDefine.swift */; };
+		8BE453A02887E5D7000F7936 /* ico_error_lzw@3x.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 8BE4539F2887E5D7000F7936 /* ico_error_lzw@3x.tiff */; };
 		8BEAF16C2856CD080020744F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEAF16B2856CD080020744F /* main.swift */; };
 		8BEAF16E2856CF940020744F /* MyApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEAF16D2856CF940020744F /* MyApplication.swift */; };
 		8BEAF1712856F4EF0020744F /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEAF16F2856F4EF0020744F /* LogViewController.swift */; };
@@ -34,6 +73,7 @@
 		8BEBABCB28659E42001F054D /* TIFFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEBABC928659E42001F054D /* TIFFViewController.swift */; };
 		8BEBABCC28659E42001F054D /* TIFFViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BEBABCA28659E42001F054D /* TIFFViewController.xib */; };
 		8BEBABCE2865A0D0001F054D /* tiffExample.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 8BEBABCD2865A0D0001F054D /* tiffExample.tiff */; };
+		8BF15DB3286930080068DF4A /* sample.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 8BF15DB2286930080068DF4A /* sample.tiff */; };
 		B910C483258B247E0046775B /* DateManagerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B910C46D258B24780046775B /* DateManagerViewController.xib */; };
 		B910C484258B247E0046775B /* LayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B910C46E258B24790046775B /* LayoutViewController.swift */; };
 		B910C485258B247E0046775B /* ClipboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B910C46F258B24790046775B /* ClipboardViewController.xib */; };
@@ -91,8 +131,6 @@
 		B938295627E2EABA000B15E1 /* AudioView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B938295527E2EABA000B15E1 /* AudioView.xib */; };
 		B93DB33B27BB34D300C7E5D6 /* CompilerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93DB33927BB34D300C7E5D6 /* CompilerViewController.swift */; };
 		B93DB33C27BB34D300C7E5D6 /* CompilerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B93DB33A27BB34D300C7E5D6 /* CompilerViewController.xib */; };
-		B93DB34527BC8F0A00C7E5D6 /* ChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93DB34327BC8F0A00C7E5D6 /* ChartsViewController.swift */; };
-		B93DB34627BC8F0A00C7E5D6 /* ChartsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B93DB34427BC8F0A00C7E5D6 /* ChartsViewController.xib */; };
 		B93DB35027BE0C0B00C7E5D6 /* CNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93DB34F27BE0C0B00C7E5D6 /* CNetwork.swift */; };
 		B93DB35327BE212A00C7E5D6 /* MVVMTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93DB35127BE212A00C7E5D6 /* MVVMTestViewController.swift */; };
 		B93DB35427BE212A00C7E5D6 /* MVVMTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B93DB35227BE212A00C7E5D6 /* MVVMTestViewController.xib */; };
@@ -216,17 +254,90 @@
 		84E073FB23F2DB5E009F89B0 /* SwiftProjUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftProjUITests.swift; sourceTree = "<group>"; };
 		84E073FD23F2DB5E009F89B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B1A8DAB28338A4800F85971 /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
+		8B20CD3C286D7D0F0062C2D3 /* CallAppShemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallAppShemeViewController.swift; sourceTree = "<group>"; };
+		8B20CD3D286D7D0F0062C2D3 /* CallAppShemeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CallAppShemeViewController.xib; sourceTree = "<group>"; };
+		8B20CD40286D9C910062C2D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8B20CD42286EAFD50062C2D3 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		8B20CD43286EAFD50062C2D3 /* DatePickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DatePickerViewController.xib; sourceTree = "<group>"; };
+		8B20CD48286EC1210062C2D3 /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
+		8B20CD4A286EC1610062C2D3 /* DatePickerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DatePickerView.xib; sourceTree = "<group>"; };
 		8B22CA3D284F0EF6002A58B8 /* ObjCFunc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCFunc.h; sourceTree = "<group>"; };
 		8B22CA3E284F0EF6002A58B8 /* ObjCFunc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjCFunc.m; sourceTree = "<group>"; };
 		8B31CA812859632A008F94BE /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		8B400F8225AAFB0200F0C079 /* TwinWebShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwinWebShareViewController.swift; sourceTree = "<group>"; };
 		8B400F8325AAFB0200F0C079 /* TwinWebShareViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwinWebShareViewController.xib; sourceTree = "<group>"; };
+		8B43D2782872D4CB00EC7D8F /* lottie-nft.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lottie-nft.json"; sourceTree = "<group>"; };
+		8B54ED2B288A2F22003709B8 /* tiff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tiff.h; sourceTree = "<group>"; };
+		8B54ED2C288A2F22003709B8 /* libtiff.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtiff.a; sourceTree = "<group>"; };
+		8B54ED2D288A2F22003709B8 /* tiffvers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tiffvers.h; sourceTree = "<group>"; };
+		8B54ED2E288A2F22003709B8 /* libtiffxx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtiffxx.a; sourceTree = "<group>"; };
+		8B54ED2F288A2F22003709B8 /* tiffio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tiffio.h; sourceTree = "<group>"; };
+		8B54ED30288A2F22003709B8 /* tiffconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tiffconf.h; sourceTree = "<group>"; };
+		8B54ED34288A30BE003709B8 /* jpeglib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jpeglib.h; sourceTree = "<group>"; };
+		8B54ED35288A30BE003709B8 /* jerror.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jerror.h; sourceTree = "<group>"; };
+		8B54ED36288A30BE003709B8 /* jconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jconfig.h; sourceTree = "<group>"; };
+		8B54ED37288A30BE003709B8 /* jmorecfg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jmorecfg.h; sourceTree = "<group>"; };
+		8B54ED38288A30BE003709B8 /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjpeg.a; sourceTree = "<group>"; };
+		8B54ED3A288A30BE003709B8 /* libpng.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpng.a; sourceTree = "<group>"; };
+		8B54ED3B288A30BE003709B8 /* png.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = png.h; sourceTree = "<group>"; };
+		8B54ED3C288A30BE003709B8 /* pnglibconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pnglibconf.h; sourceTree = "<group>"; };
+		8B54ED3D288A30BE003709B8 /* pngconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pngconf.h; sourceTree = "<group>"; };
+		8B5664AF287C0A1A0012FBD8 /* TIFFFieldTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIFFFieldTypes.m; sourceTree = "<group>"; };
+		8B5664B0287C0A1A0012FBD8 /* TIFFReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIFFReader.m; sourceTree = "<group>"; };
+		8B5664B1287C0A1A0012FBD8 /* TIFFFileDirectoryEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIFFFileDirectoryEntry.m; sourceTree = "<group>"; };
+		8B5664B2287C0A1A0012FBD8 /* TIFFFileDirectory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIFFFileDirectory.m; sourceTree = "<group>"; };
+		8B5664B3287C0A1A0012FBD8 /* TIFFFileDirectory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIFFFileDirectory.h; sourceTree = "<group>"; };
+		8B5664B4287C0A1A0012FBD8 /* TIFFFieldTagTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIFFFieldTagTypes.m; sourceTree = "<group>"; };
+		8B5664B5287C0A1B0012FBD8 /* TIFFFieldTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIFFFieldTypes.h; sourceTree = "<group>"; };
+		8B5664B7287C0A1B0012FBD8 /* TIFFDeflateCompression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIFFDeflateCompression.m; sourceTree = "<group>"; };
+		8B5664B8287C0A1B0012FBD8 /* TIFFRawCompression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIFFRawCompression.h; sourceTree = "<group>"; };
+		8B5664B9287C0A1B0012FBD8 /* TIFFCompressionDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIFFCompressionDecoder.h; sourceTree = "<group>"; };
+		8B5664BA287C0A1B0012FBD8 /* TIFFLZWCompression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIFFLZWCompression.m; sourceTree = "<group>"; };
+		8B5664BB287C0A1B0012FBD8 /* TIFFPackbitsCompression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIFFPackbitsCompression.m; sourceTree = "<group>"; };
+		8B5664BC287C0A1B0012FBD8 /* TIFFPredictor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIFFPredictor.h; sourceTree = "<group>"; };
+		8B5664BD287C0A1B0012FBD8 /* TIFFUnsupportedCompression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIFFUnsupportedCompression.h; sourceTree = "<group>"; };
+		8B5664BE287C0A1B0012FBD8 /* TIFFDeflateCompression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIFFDeflateCompression.h; sourceTree = "<group>"; };
+		8B5664BF287C0A1B0012FBD8 /* TIFFRawCompression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIFFRawCompression.m; sourceTree = "<group>"; };
+		8B5664C0287C0A1B0012FBD8 /* TIFFCompressionEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIFFCompressionEncoder.h; sourceTree = "<group>"; };
+		8B5664C1287C0A1B0012FBD8 /* TIFFPackbitsCompression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIFFPackbitsCompression.h; sourceTree = "<group>"; };
+		8B5664C2287C0A1B0012FBD8 /* TIFFLZWCompression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIFFLZWCompression.h; sourceTree = "<group>"; };
+		8B5664C3287C0A1B0012FBD8 /* TIFFUnsupportedCompression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIFFUnsupportedCompression.m; sourceTree = "<group>"; };
+		8B5664C4287C0A1B0012FBD8 /* TIFFPredictor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIFFPredictor.m; sourceTree = "<group>"; };
+		8B5664C5287C0A1B0012FBD8 /* tiff_ios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tiff_ios.h; sourceTree = "<group>"; };
+		8B5664C7287C0A1B0012FBD8 /* TIFFIOUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIFFIOUtils.h; sourceTree = "<group>"; };
+		8B5664C8287C0A1B0012FBD8 /* TIFFByteReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIFFByteReader.m; sourceTree = "<group>"; };
+		8B5664C9287C0A1B0012FBD8 /* TIFFByteWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIFFByteWriter.h; sourceTree = "<group>"; };
+		8B5664CA287C0A1B0012FBD8 /* TIFFIOUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIFFIOUtils.m; sourceTree = "<group>"; };
+		8B5664CB287C0A1B0012FBD8 /* TIFFByteReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIFFByteReader.h; sourceTree = "<group>"; };
+		8B5664CC287C0A1B0012FBD8 /* TIFFByteWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIFFByteWriter.m; sourceTree = "<group>"; };
+		8B5664CD287C0A1B0012FBD8 /* TIFFImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIFFImage.h; sourceTree = "<group>"; };
+		8B5664CE287C0A1B0012FBD8 /* TIFFImageWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIFFImageWindow.h; sourceTree = "<group>"; };
+		8B5664CF287C0A1B0012FBD8 /* TIFFRasters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIFFRasters.h; sourceTree = "<group>"; };
+		8B5664D0287C0A1B0012FBD8 /* TIFFRasters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIFFRasters.m; sourceTree = "<group>"; };
+		8B5664D2287C0A1B0012FBD8 /* TIFFConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIFFConstants.h; sourceTree = "<group>"; };
+		8B5664D3287C0A1B0012FBD8 /* TIFFConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIFFConstants.m; sourceTree = "<group>"; };
+		8B5664D4287C0A1B0012FBD8 /* TIFFReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIFFReader.h; sourceTree = "<group>"; };
+		8B5664D5287C0A1B0012FBD8 /* TIFFImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIFFImage.m; sourceTree = "<group>"; };
+		8B5664D6287C0A1C0012FBD8 /* TIFFWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIFFWriter.h; sourceTree = "<group>"; };
+		8B5664D7287C0A1C0012FBD8 /* TIFFImageWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIFFImageWindow.m; sourceTree = "<group>"; };
+		8B5664D8287C0A1C0012FBD8 /* TIFFWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIFFWriter.m; sourceTree = "<group>"; };
+		8B5664D9287C0A1C0012FBD8 /* TIFFFileDirectoryEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIFFFileDirectoryEntry.h; sourceTree = "<group>"; };
+		8B5664DA287C0A1C0012FBD8 /* TIFFFieldTagTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIFFFieldTagTypes.h; sourceTree = "<group>"; };
+		8B5664DB287C0A1C0012FBD8 /* tiff-ios-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "tiff-ios-Prefix.pch"; sourceTree = "<group>"; };
+		8B5664EF287E42C70012FBD8 /* excelView.xlsx */ = {isa = PBXFileReference; lastKnownFileType = file; path = excelView.xlsx; sourceTree = "<group>"; };
+		8B5664F0287E42F10012FBD8 /* ExcelViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcelViewerViewController.swift; sourceTree = "<group>"; };
+		8B5664F1287E42F10012FBD8 /* ExcelViewerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExcelViewerViewController.xib; sourceTree = "<group>"; };
 		8B5C73642862D72700648643 /* CustomNaviBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomNaviBar.xib; sourceTree = "<group>"; };
 		8B5C73662862DEF500648643 /* CViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CViewController.swift; sourceTree = "<group>"; };
 		8B5C73672862DEF500648643 /* CViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CViewController.xib; sourceTree = "<group>"; };
 		8B5C736A2862FEE000648643 /* CustomNaviBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNaviBar.swift; sourceTree = "<group>"; };
+		8B729C3D2872C91500D7A848 /* LottieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieViewController.swift; sourceTree = "<group>"; };
+		8B729C3E2872C91500D7A848 /* LottieViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LottieViewController.xib; sourceTree = "<group>"; };
+		8B88B7DF287E9E5D00F651BC /* WebInLocalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebInLocalViewController.swift; sourceTree = "<group>"; };
+		8B88B7E0287E9E5D00F651BC /* WebInLocalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebInLocalViewController.xib; sourceTree = "<group>"; };
 		8BDDAFBB2585CAE9003EE57F /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		8BDDAFC02585CFD7003EE57F /* CommonDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonDefine.swift; sourceTree = "<group>"; };
+		8BE4539F2887E5D7000F7936 /* ico_error_lzw@3x.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "ico_error_lzw@3x.tiff"; sourceTree = "<group>"; };
 		8BEAF16B2856CD080020744F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		8BEAF16D2856CF940020744F /* MyApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyApplication.swift; sourceTree = "<group>"; };
 		8BEAF16F2856F4EF0020744F /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
@@ -234,6 +345,7 @@
 		8BEBABC928659E42001F054D /* TIFFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TIFFViewController.swift; sourceTree = "<group>"; };
 		8BEBABCA28659E42001F054D /* TIFFViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TIFFViewController.xib; sourceTree = "<group>"; };
 		8BEBABCD2865A0D0001F054D /* tiffExample.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = tiffExample.tiff; sourceTree = "<group>"; };
+		8BF15DB2286930080068DF4A /* sample.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = sample.tiff; sourceTree = "<group>"; };
 		97B87B0654537CC35C66A4E6 /* Pods-SwiftProjTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftProjTests.release.xcconfig"; path = "Target Support Files/Pods-SwiftProjTests/Pods-SwiftProjTests.release.xcconfig"; sourceTree = "<group>"; };
 		A6C5D207E356D2116344EE78 /* Pods-SwiftProjTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftProjTests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftProjTests/Pods-SwiftProjTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B910C46D258B24780046775B /* DateManagerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DateManagerViewController.xib; sourceTree = "<group>"; };
@@ -293,8 +405,6 @@
 		B938295527E2EABA000B15E1 /* AudioView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AudioView.xib; sourceTree = "<group>"; };
 		B93DB33927BB34D300C7E5D6 /* CompilerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompilerViewController.swift; sourceTree = "<group>"; };
 		B93DB33A27BB34D300C7E5D6 /* CompilerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompilerViewController.xib; sourceTree = "<group>"; };
-		B93DB34327BC8F0A00C7E5D6 /* ChartsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsViewController.swift; sourceTree = "<group>"; };
-		B93DB34427BC8F0A00C7E5D6 /* ChartsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChartsViewController.xib; sourceTree = "<group>"; };
 		B93DB34F27BE0C0B00C7E5D6 /* CNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CNetwork.swift; sourceTree = "<group>"; };
 		B93DB35127BE212A00C7E5D6 /* MVVMTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMTestViewController.swift; sourceTree = "<group>"; };
 		B93DB35227BE212A00C7E5D6 /* MVVMTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MVVMTestViewController.xib; sourceTree = "<group>"; };
@@ -398,6 +508,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B54ED3F288A30BE003709B8 /* libpng.a in Frameworks */,
+				8B54ED31288A2F22003709B8 /* libtiff.a in Frameworks */,
+				8B54ED3E288A30BE003709B8 /* libjpeg.a in Frameworks */,
+				8B54ED32288A2F22003709B8 /* libtiffxx.a in Frameworks */,
 				D06CA978744E8D3063175D7A /* Pods_SwiftProj.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -459,6 +573,7 @@
 		84E073DA23F2DB5E009F89B0 /* SwiftProj */ = {
 			isa = PBXGroup;
 			children = (
+				8B5664AD287C09BC0012FBD8 /* ExternalLib */,
 				B9D63E80260C7DFE000EEF82 /* SwiftProj.entitlements */,
 				B93DB34E27BE0BDF00C7E5D6 /* Network */,
 				B956E95525FEE5FD005039FA /* Class */,
@@ -470,6 +585,7 @@
 				B98346EF2773F994007D1687 /* VC2 */,
 				B976108A256B38ED003F28A7 /* View */,
 				84E073DB23F2DB5E009F89B0 /* AppDelegate.swift */,
+				8B20CD40286D9C910062C2D3 /* SceneDelegate.swift */,
 				84E073DD23F2DB5E009F89B0 /* ViewController.swift */,
 				84E073DF23F2DB5E009F89B0 /* Main.storyboard */,
 				84E073E223F2DB5E009F89B0 /* Assets.xcassets */,
@@ -507,6 +623,126 @@
 				8B22CA3E284F0EF6002A58B8 /* ObjCFunc.m */,
 			);
 			path = ObjC;
+			sourceTree = "<group>";
+		};
+		8B54ED2A288A2F22003709B8 /* libtiff */ = {
+			isa = PBXGroup;
+			children = (
+				8B54ED2B288A2F22003709B8 /* tiff.h */,
+				8B54ED2C288A2F22003709B8 /* libtiff.a */,
+				8B54ED2D288A2F22003709B8 /* tiffvers.h */,
+				8B54ED2E288A2F22003709B8 /* libtiffxx.a */,
+				8B54ED2F288A2F22003709B8 /* tiffio.h */,
+				8B54ED30288A2F22003709B8 /* tiffconf.h */,
+			);
+			path = libtiff;
+			sourceTree = "<group>";
+		};
+		8B54ED33288A30BE003709B8 /* libjpeg */ = {
+			isa = PBXGroup;
+			children = (
+				8B54ED34288A30BE003709B8 /* jpeglib.h */,
+				8B54ED35288A30BE003709B8 /* jerror.h */,
+				8B54ED36288A30BE003709B8 /* jconfig.h */,
+				8B54ED37288A30BE003709B8 /* jmorecfg.h */,
+				8B54ED38288A30BE003709B8 /* libjpeg.a */,
+			);
+			path = libjpeg;
+			sourceTree = "<group>";
+		};
+		8B54ED39288A30BE003709B8 /* libpng */ = {
+			isa = PBXGroup;
+			children = (
+				8B54ED3A288A30BE003709B8 /* libpng.a */,
+				8B54ED3B288A30BE003709B8 /* png.h */,
+				8B54ED3C288A30BE003709B8 /* pnglibconf.h */,
+				8B54ED3D288A30BE003709B8 /* pngconf.h */,
+			);
+			path = libpng;
+			sourceTree = "<group>";
+		};
+		8B5664AD287C09BC0012FBD8 /* ExternalLib */ = {
+			isa = PBXGroup;
+			children = (
+				8B54ED33288A30BE003709B8 /* libjpeg */,
+				8B54ED39288A30BE003709B8 /* libpng */,
+				8B54ED2A288A2F22003709B8 /* libtiff */,
+				8B5664AE287C09CA0012FBD8 /* tiff-iOS */,
+			);
+			path = ExternalLib;
+			sourceTree = "<group>";
+		};
+		8B5664AE287C09CA0012FBD8 /* tiff-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				8B5664B6287C0A1B0012FBD8 /* compression */,
+				8B5664C6287C0A1B0012FBD8 /* io */,
+				8B5664C5287C0A1B0012FBD8 /* tiff_ios.h */,
+				8B5664DB287C0A1C0012FBD8 /* tiff-ios-Prefix.pch */,
+				8B5664DA287C0A1C0012FBD8 /* TIFFFieldTagTypes.h */,
+				8B5664B4287C0A1A0012FBD8 /* TIFFFieldTagTypes.m */,
+				8B5664B5287C0A1B0012FBD8 /* TIFFFieldTypes.h */,
+				8B5664AF287C0A1A0012FBD8 /* TIFFFieldTypes.m */,
+				8B5664B3287C0A1A0012FBD8 /* TIFFFileDirectory.h */,
+				8B5664B2287C0A1A0012FBD8 /* TIFFFileDirectory.m */,
+				8B5664D9287C0A1C0012FBD8 /* TIFFFileDirectoryEntry.h */,
+				8B5664B1287C0A1A0012FBD8 /* TIFFFileDirectoryEntry.m */,
+				8B5664CD287C0A1B0012FBD8 /* TIFFImage.h */,
+				8B5664D5287C0A1B0012FBD8 /* TIFFImage.m */,
+				8B5664CE287C0A1B0012FBD8 /* TIFFImageWindow.h */,
+				8B5664D7287C0A1C0012FBD8 /* TIFFImageWindow.m */,
+				8B5664CF287C0A1B0012FBD8 /* TIFFRasters.h */,
+				8B5664D0287C0A1B0012FBD8 /* TIFFRasters.m */,
+				8B5664D4287C0A1B0012FBD8 /* TIFFReader.h */,
+				8B5664B0287C0A1A0012FBD8 /* TIFFReader.m */,
+				8B5664D6287C0A1C0012FBD8 /* TIFFWriter.h */,
+				8B5664D8287C0A1C0012FBD8 /* TIFFWriter.m */,
+				8B5664D1287C0A1B0012FBD8 /* util */,
+			);
+			path = "tiff-iOS";
+			sourceTree = "<group>";
+		};
+		8B5664B6287C0A1B0012FBD8 /* compression */ = {
+			isa = PBXGroup;
+			children = (
+				8B5664B7287C0A1B0012FBD8 /* TIFFDeflateCompression.m */,
+				8B5664B8287C0A1B0012FBD8 /* TIFFRawCompression.h */,
+				8B5664B9287C0A1B0012FBD8 /* TIFFCompressionDecoder.h */,
+				8B5664BA287C0A1B0012FBD8 /* TIFFLZWCompression.m */,
+				8B5664BB287C0A1B0012FBD8 /* TIFFPackbitsCompression.m */,
+				8B5664BC287C0A1B0012FBD8 /* TIFFPredictor.h */,
+				8B5664BD287C0A1B0012FBD8 /* TIFFUnsupportedCompression.h */,
+				8B5664BE287C0A1B0012FBD8 /* TIFFDeflateCompression.h */,
+				8B5664BF287C0A1B0012FBD8 /* TIFFRawCompression.m */,
+				8B5664C0287C0A1B0012FBD8 /* TIFFCompressionEncoder.h */,
+				8B5664C1287C0A1B0012FBD8 /* TIFFPackbitsCompression.h */,
+				8B5664C2287C0A1B0012FBD8 /* TIFFLZWCompression.h */,
+				8B5664C3287C0A1B0012FBD8 /* TIFFUnsupportedCompression.m */,
+				8B5664C4287C0A1B0012FBD8 /* TIFFPredictor.m */,
+			);
+			path = compression;
+			sourceTree = "<group>";
+		};
+		8B5664C6287C0A1B0012FBD8 /* io */ = {
+			isa = PBXGroup;
+			children = (
+				8B5664C7287C0A1B0012FBD8 /* TIFFIOUtils.h */,
+				8B5664C8287C0A1B0012FBD8 /* TIFFByteReader.m */,
+				8B5664C9287C0A1B0012FBD8 /* TIFFByteWriter.h */,
+				8B5664CA287C0A1B0012FBD8 /* TIFFIOUtils.m */,
+				8B5664CB287C0A1B0012FBD8 /* TIFFByteReader.h */,
+				8B5664CC287C0A1B0012FBD8 /* TIFFByteWriter.m */,
+			);
+			path = io;
+			sourceTree = "<group>";
+		};
+		8B5664D1287C0A1B0012FBD8 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				8B5664D2287C0A1B0012FBD8 /* TIFFConstants.h */,
+				8B5664D3287C0A1B0012FBD8 /* TIFFConstants.m */,
+			);
+			path = util;
 			sourceTree = "<group>";
 		};
 		B937278C279F7A820051E524 /* DesignPattern */ = {
@@ -584,6 +820,8 @@
 				B9F24174256F45100033E9C5 /* ThreeView.xib */,
 				B938295327E2D32B000B15E1 /* AudioView.swift */,
 				B938295527E2EABA000B15E1 /* AudioView.xib */,
+				8B20CD48286EC1210062C2D3 /* DatePickerView.swift */,
+				8B20CD4A286EC1610062C2D3 /* DatePickerView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -601,9 +839,12 @@
 		B976108C256B38ED003F28A7 /* img */ = {
 			isa = PBXGroup;
 			children = (
+				8B43D2782872D4CB00EC7D8F /* lottie-nft.json */,
+				8BF15DB2286930080068DF4A /* sample.tiff */,
 				8BEBABCD2865A0D0001F054D /* tiffExample.tiff */,
 				8B1A8DAB28338A4800F85971 /* loading.gif */,
 				B92912B125E7863400250756 /* Kalimba.mp3 */,
+				8BE4539F2887E5D7000F7936 /* ico_error_lzw@3x.tiff */,
 			);
 			path = img;
 			sourceTree = "<group>";
@@ -611,6 +852,7 @@
 		B976108D256B38ED003F28A7 /* data */ = {
 			isa = PBXGroup;
 			children = (
+				8B5664EF287E42C70012FBD8 /* excelView.xlsx */,
 				B976108E256B38ED003F28A7 /* dic.plist */,
 				B9F639292798FC83004144CD /* name.strings */,
 			);
@@ -707,8 +949,6 @@
 				B9372789279F7A2D0051E524 /* DesignPatternViewController.xib */,
 				B93DB33927BB34D300C7E5D6 /* CompilerViewController.swift */,
 				B93DB33A27BB34D300C7E5D6 /* CompilerViewController.xib */,
-				B93DB34327BC8F0A00C7E5D6 /* ChartsViewController.swift */,
-				B93DB34427BC8F0A00C7E5D6 /* ChartsViewController.xib */,
 				B93DB35127BE212A00C7E5D6 /* MVVMTestViewController.swift */,
 				B93DB35227BE212A00C7E5D6 /* MVVMTestViewController.xib */,
 				B98F855A27D593350084C5D5 /* LocalWebViewController.swift */,
@@ -723,6 +963,16 @@
 				8B5C73672862DEF500648643 /* CViewController.xib */,
 				8BEBABC928659E42001F054D /* TIFFViewController.swift */,
 				8BEBABCA28659E42001F054D /* TIFFViewController.xib */,
+				8B20CD3C286D7D0F0062C2D3 /* CallAppShemeViewController.swift */,
+				8B20CD3D286D7D0F0062C2D3 /* CallAppShemeViewController.xib */,
+				8B20CD42286EAFD50062C2D3 /* DatePickerViewController.swift */,
+				8B20CD43286EAFD50062C2D3 /* DatePickerViewController.xib */,
+				8B729C3D2872C91500D7A848 /* LottieViewController.swift */,
+				8B729C3E2872C91500D7A848 /* LottieViewController.xib */,
+				8B5664F0287E42F10012FBD8 /* ExcelViewerViewController.swift */,
+				8B5664F1287E42F10012FBD8 /* ExcelViewerViewController.xib */,
+				8B88B7DF287E9E5D00F651BC /* WebInLocalViewController.swift */,
+				8B88B7E0287E9E5D00F651BC /* WebInLocalViewController.xib */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -908,6 +1158,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B5664F4287E45B70012FBD8 /* excelView.xlsx in Resources */,
 				B910C48B258B247E0046775B /* RotateViewController.xib in Resources */,
 				B956E95B25FEE96D005039FA /* JsonObjectViewController.xib in Resources */,
 				B98F857027D5A2090084C5D5 /* banner_03.png in Resources */,
@@ -921,6 +1172,7 @@
 				B9F46824268166EA00A58C8F /* StreamViewController.xib in Resources */,
 				B9F6389E27979992004144CD /* ShakeViewController.xib in Resources */,
 				B9372786279E8C170051E524 /* CVCell.xib in Resources */,
+				8B20CD3F286D7D0F0062C2D3 /* CallAppShemeViewController.xib in Resources */,
 				B93727A1279F828A0051E524 /* ArticleTableViewCell.xib in Resources */,
 				B910C483258B247E0046775B /* DateManagerViewController.xib in Resources */,
 				B910C495258B247E0046775B /* NaviBarViewController.xib in Resources */,
@@ -936,13 +1188,15 @@
 				B9FF22C925F223E000C381B1 /* AVCaptureViewController.xib in Resources */,
 				B9F2415F256E26310033E9C5 /* GDCViewController.xib in Resources */,
 				B9F24175256F45100033E9C5 /* ThreeView.xib in Resources */,
+				8BE453A02887E5D7000F7936 /* ico_error_lzw@3x.tiff in Resources */,
 				B910C4A4258C88F30046775B /* CarmeraViewController.xib in Resources */,
 				B910C49C258B24FB0046775B /* QRCodeViewController.xib in Resources */,
-				B93DB34627BC8F0A00C7E5D6 /* ChartsViewController.xib in Resources */,
 				B92912B225E7863400250756 /* Kalimba.mp3 in Resources */,
 				B910C487258B247E0046775B /* AlbumViewController.xib in Resources */,
 				B9F2416D256E4A610033E9C5 /* DummyView.xib in Resources */,
+				8B20CD4B286EC1610062C2D3 /* DatePickerView.xib in Resources */,
 				B9A1D13C25FF55FE0045AFA6 /* MicoRecordViewController.xib in Resources */,
+				8B20CD45286EAFD50062C2D3 /* DatePickerViewController.xib in Resources */,
 				B910C491258B247E0046775B /* HttpConnectionViewController.xib in Resources */,
 				B99D039125B9066200A0E23B /* AnimationViewController.xib in Resources */,
 				8B5C73692862DEF500648643 /* CViewController.xib in Resources */,
@@ -961,6 +1215,7 @@
 				B910C485258B247E0046775B /* ClipboardViewController.xib in Resources */,
 				B98F856027D595A20084C5D5 /* main.html in Resources */,
 				B9FF22A025EF467F00C381B1 /* DocViewController.xib in Resources */,
+				8B5664F3287E42F20012FBD8 /* ExcelViewerViewController.xib in Resources */,
 				B98F855D27D593360084C5D5 /* LocalWebViewController.xib in Resources */,
 				84E073E123F2DB5E009F89B0 /* Main.storyboard in Resources */,
 				B92912A925E76E6500250756 /* AudioViewController.xib in Resources */,
@@ -968,8 +1223,10 @@
 				B9F841DC27AD178F007C1AD8 /* GoodsViewController.xib in Resources */,
 				B9F6391E2798FC60004144CD /* LangViewController.xib in Resources */,
 				B910C494258B247E0046775B /* ImageEditViewController.xib in Resources */,
+				8B43D2792872D4CB00EC7D8F /* lottie-nft.json in Resources */,
 				B9403B06256C959000B4CBC6 /* FileManagerViewController.xib in Resources */,
 				8B400F8525AAFB0200F0C079 /* TwinWebShareViewController.xib in Resources */,
+				8B88B7E2287E9E5D00F651BC /* WebInLocalViewController.xib in Resources */,
 				B9761092256B38ED003F28A7 /* dic.plist in Resources */,
 				B947AF7725F61D96009CA5E6 /* KVOViewController.xib in Resources */,
 				8BEBABCC28659E42001F054D /* TIFFViewController.xib in Resources */,
@@ -978,8 +1235,10 @@
 				B910F6BA2770395000C0821E /* TimeViewController.xib in Resources */,
 				B9FAB8052770672B008839D9 /* ImagePickerViewController.xib in Resources */,
 				B9F241982570DDFA0033E9C5 /* ListCell.xib in Resources */,
+				8B729C402872C91500D7A848 /* LottieViewController.xib in Resources */,
 				B937278B279F7A2D0051E524 /* DesignPatternViewController.xib in Resources */,
 				B93DB33C27BB34D300C7E5D6 /* CompilerViewController.xib in Resources */,
+				8BF15DB3286930080068DF4A /* sample.tiff in Resources */,
 				8B1A8DAC28338A4800F85971 /* loading.gif in Resources */,
 				B9F639272798FC83004144CD /* name.strings in Resources */,
 				B913A54125C1221F004D3A10 /* FileSendViewController.xib in Resources */,
@@ -1129,7 +1388,8 @@
 			files = (
 				8B31CA822859632B008F94BE /* Observable.swift in Sources */,
 				B98346F32773FC8F007D1687 /* Extension.swift in Sources */,
-				B93DB34527BC8F0A00C7E5D6 /* ChartsViewController.swift in Sources */,
+				8B5664E8287C0A1C0012FBD8 /* TIFFIOUtils.m in Sources */,
+				8B20CD41286D9C910062C2D3 /* SceneDelegate.swift in Sources */,
 				B9F241932570DC140033E9C5 /* ListViewController.swift in Sources */,
 				B96C236327F3F2EE00649B3B /* WebScriptMHandler.swift in Sources */,
 				B98346F12773F9AB007D1687 /* WebView2ViewController.swift in Sources */,
@@ -1140,10 +1400,13 @@
 				B97610A4256B8808003F28A7 /* ViewController2.swift in Sources */,
 				B910C4A3258C88F30046775B /* CarmeraViewController.swift in Sources */,
 				8B5C736B2862FEE000648643 /* CustomNaviBar.swift in Sources */,
+				8B5664E6287C0A1C0012FBD8 /* TIFFPredictor.m in Sources */,
+				8B5664EB287C0A1C0012FBD8 /* TIFFConstants.m in Sources */,
 				B93DB35027BE0C0B00C7E5D6 /* CNetwork.swift in Sources */,
 				B9DA864227E9965B00D44A04 /* Node.swift in Sources */,
 				B976109E256B75C6003F28A7 /* BasicViewController.swift in Sources */,
 				B913A54025C1221F004D3A10 /* FileSendViewController.swift in Sources */,
+				8B5664E4287C0A1C0012FBD8 /* TIFFRawCompression.m in Sources */,
 				B9FF229F25EF467F00C381B1 /* DocViewController.swift in Sources */,
 				B9F46823268166EA00A58C8F /* StreamViewController.swift in Sources */,
 				B910C48F258B247E0046775B /* PDFAndViewController.swift in Sources */,
@@ -1156,30 +1419,46 @@
 				B94E563D25A8184A0032A165 /* String+Extension.swift in Sources */,
 				B9F24169256E4A0E0033E9C5 /* OneView.swift in Sources */,
 				B93727A0279F828A0051E524 /* ArticleTableViewCell.swift in Sources */,
+				8B5664ED287C0A1C0012FBD8 /* TIFFImageWindow.m in Sources */,
 				B956E95725FEE610005039FA /* Person.swift in Sources */,
 				B9F2416B256E4A1D0033E9C5 /* TwoView.swift in Sources */,
 				B99CEC9626A5576100DBDA21 /* TcpSocket.swift in Sources */,
+				8B5664EC287C0A1C0012FBD8 /* TIFFImage.m in Sources */,
+				8B5664EA287C0A1C0012FBD8 /* TIFFRasters.m in Sources */,
 				8BEAF1712856F4EF0020744F /* LogViewController.swift in Sources */,
 				B910C48D258B247E0046775B /* InfinityScrollViewController.swift in Sources */,
+				8B5664DD287C0A1C0012FBD8 /* TIFFReader.m in Sources */,
 				B9F24166256E42880033E9C5 /* SingleViewController.swift in Sources */,
+				8B5664E1287C0A1C0012FBD8 /* TIFFDeflateCompression.m in Sources */,
 				B9403B05256C959000B4CBC6 /* FileManagerViewController.swift in Sources */,
+				8B729C3F2872C91500D7A848 /* LottieViewController.swift in Sources */,
+				8B5664E3287C0A1C0012FBD8 /* TIFFPackbitsCompression.m in Sources */,
+				8B5664E7287C0A1C0012FBD8 /* TIFFByteReader.m in Sources */,
 				B93DB33B27BB34D300C7E5D6 /* CompilerViewController.swift in Sources */,
 				B938295427E2D32B000B15E1 /* AudioView.swift in Sources */,
 				B947AF7625F61D96009CA5E6 /* KVOViewController.swift in Sources */,
+				8B20CD44286EAFD50062C2D3 /* DatePickerViewController.swift in Sources */,
 				8BEAF16C2856CD080020744F /* main.swift in Sources */,
 				B997E4C227D1A4AC000DCC2F /* CustomPopup.swift in Sources */,
+				8B5664E9287C0A1C0012FBD8 /* TIFFByteWriter.m in Sources */,
 				84E073DE23F2DB5E009F89B0 /* ViewController.swift in Sources */,
 				B96C236E27F56C0300649B3B /* CacheManager.swift in Sources */,
 				8B22CA3F284F0EF6002A58B8 /* ObjCFunc.m in Sources */,
+				8B20CD49286EC1210062C2D3 /* DatePickerView.swift in Sources */,
 				84E073DC23F2DB5E009F89B0 /* AppDelegate.swift in Sources */,
 				B97610A0256B77AF003F28A7 /* GlobalData.swift in Sources */,
 				B93727A7279F884F0051E524 /* ArticleListViewModel.swift in Sources */,
 				B910F6B92770395000C0821E /* TimeViewController.swift in Sources */,
 				B9F2415E256E26310033E9C5 /* GDCViewController.swift in Sources */,
 				B9C0822027E0587B00304F63 /* RemoteAudioViewController.swift in Sources */,
+				8B5664E0287C0A1C0012FBD8 /* TIFFFieldTagTypes.m in Sources */,
+				8B20CD3E286D7D0F0062C2D3 /* CallAppShemeViewController.swift in Sources */,
+				8B5664EE287C0A1C0012FBD8 /* TIFFWriter.m in Sources */,
 				B9CE29CC2782ECB10074BAF2 /* MPDFViewController.swift in Sources */,
+				8B5664E5287C0A1C0012FBD8 /* TIFFUnsupportedCompression.m in Sources */,
 				B9761094256B3990003F28A7 /* RootViewController.swift in Sources */,
 				8BEBABCB28659E42001F054D /* TIFFViewController.swift in Sources */,
+				8B5664DE287C0A1C0012FBD8 /* TIFFFileDirectoryEntry.m in Sources */,
 				B910C489258B247E0046775B /* NaviBarViewController.swift in Sources */,
 				B910C49B258B24FB0046775B /* QRCodeViewController.swift in Sources */,
 				8BDDAFC12585CFD7003EE57F /* CommonDefine.swift in Sources */,
@@ -1193,24 +1472,29 @@
 				B98F855C27D593360084C5D5 /* LocalWebViewController.swift in Sources */,
 				B9FAB80927718AAE008839D9 /* MemoryLeakViewController.swift in Sources */,
 				B93727A3279F86D80051E524 /* Article.swift in Sources */,
+				8B5664E2287C0A1C0012FBD8 /* TIFFLZWCompression.m in Sources */,
 				B910C498258B247E0046775B /* ClipboardViewController.swift in Sources */,
 				B910C48C258B247E0046775B /* HttpConnectionViewController.swift in Sources */,
 				B9E7F85927D04EF300D9B1E0 /* InfinityScrollCell.swift in Sources */,
 				B937277F279E87790051E524 /* ColletionViewController.swift in Sources */,
 				B937279C279F7C180051E524 /* MVVMViewController.swift in Sources */,
 				B9F841DB27AD178F007C1AD8 /* GoodsViewController.swift in Sources */,
+				8B88B7E1287E9E5D00F651BC /* WebInLocalViewController.swift in Sources */,
 				B9F24173256F45000033E9C5 /* ThreeView.swift in Sources */,
 				B910C484258B247E0046775B /* LayoutViewController.swift in Sources */,
 				B9F6391C2798FC52004144CD /* LangViewController.swift in Sources */,
 				B910C48A258B247E0046775B /* RotateViewController.swift in Sources */,
 				B9F241972570DDFA0033E9C5 /* ListCell.swift in Sources */,
+				8B5664DF287C0A1C0012FBD8 /* TIFFFileDirectory.m in Sources */,
 				8BDDAFBC2585CAE9003EE57F /* SettingViewController.swift in Sources */,
 				B913A52D25BEA318004D3A10 /* DrawGraphViewController.swift in Sources */,
 				B9403B0E256CF1BB00B4CBC6 /* CaptureViewController.swift in Sources */,
 				B910C490258B247E0046775B /* DateManagerViewController.swift in Sources */,
 				B9F24162256E30540033E9C5 /* introViewController.swift in Sources */,
 				B93727A9279F955B0051E524 /* ArticlePresenter.swift in Sources */,
+				8B5664DC287C0A1C0012FBD8 /* TIFFFieldTypes.m in Sources */,
 				8B5C73682862DEF500648643 /* CViewController.swift in Sources */,
+				8B5664F2287E42F20012FBD8 /* ExcelViewerViewController.swift in Sources */,
 				B9372792279F7BE20051E524 /* MVCViewController.swift in Sources */,
 				8BEAF16E2856CF940020744F /* MyApplication.swift in Sources */,
 				B9FAB8042770672B008839D9 /* ImagePickerViewController.swift in Sources */,
@@ -1422,11 +1706,27 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CZP8K87ZME;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking/AFNetworking.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Charts/Charts.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Zip/Zip.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/lottie-ios/Lottie.framework/Headers\"",
+					"\"$(SRCROOT)/SwiftProj/ExternalLib/libtiff\"",
+					"\"$(SRCROOT)/SwiftProj/ExternalLib/libpng\"",
+					"\"$(SRCROOT)/SwiftProj/ExternalLib/libjpeg\"",
+				);
 				INFOPLIST_FILE = SwiftProj/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SwiftProj/ExternalLib/libtiff",
+					"$(PROJECT_DIR)/SwiftProj/ExternalLib/libjpeg",
+					"$(PROJECT_DIR)/SwiftProj/ExternalLib/libpng",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = smg.test.swiftproj;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1446,11 +1746,27 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CZP8K87ZME;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking/AFNetworking.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Charts/Charts.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Zip/Zip.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/lottie-ios/Lottie.framework/Headers\"",
+					"\"$(SRCROOT)/SwiftProj/ExternalLib/libtiff\"",
+					"\"$(SRCROOT)/SwiftProj/ExternalLib/libpng\"",
+					"\"$(SRCROOT)/SwiftProj/ExternalLib/libjpeg\"",
+				);
 				INFOPLIST_FILE = SwiftProj/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SwiftProj/ExternalLib/libtiff",
+					"$(PROJECT_DIR)/SwiftProj/ExternalLib/libjpeg",
+					"$(PROJECT_DIR)/SwiftProj/ExternalLib/libpng",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = smg.test.swiftproj;
 				PRODUCT_NAME = "$(TARGET_NAME)";

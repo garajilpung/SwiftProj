@@ -109,6 +109,17 @@ public func stopLoading() {
     view.isHidden = true
 }
 
+public func isPad() -> Bool{
+    var ret = false
+    
+    if (UIDevice.current.userInterfaceIdiom == .pad) {
+        ret = true
+    }else {
+        ret = false
+    }
+    
+    return ret
+}
 
 class Utility {
 
@@ -243,6 +254,17 @@ class Utility {
 
         UserDefaults.standard.register(defaults: dic)
         
+    }
+    
+    // badgeCount Add
+    static public func increaseBadge() {
+        //ASPN 사용했을 때만 사용 가능하다.
+        UIApplication.shared.applicationIconBadgeNumber = UIApplication.shared.applicationIconBadgeNumber + 1
+    }
+    
+    static public func initBadge() {
+        //ASPN 사용했을 때만 사용 가능하다.
+        UIApplication.shared.applicationIconBadgeNumber = 0
     }
 }
 

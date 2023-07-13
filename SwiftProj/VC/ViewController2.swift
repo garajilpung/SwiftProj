@@ -15,6 +15,9 @@ class ViewController2: BasicViewController, WKNavigationDelegate, WKScriptMessag
     var m_WebView : WKWebView = WKWebView.init()
     
 
+    ///window.open()으로 열리는 새창
+    var createWebView: WKWebView?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -22,7 +25,7 @@ class ViewController2: BasicViewController, WKNavigationDelegate, WKScriptMessag
         // userAgent 설정은 웹뷰에서든 userDefault 에서든 먹힌다.
         // 단 아마도 우선순위는 Webview가 먼저고 userDefault 값을 사용하는 것 같다.
         // 만약 웹뷰를 여러개 사용하는데 하나의 URL로 사용하면 공통으로 처리하는 것이 편한 것 같음
-        Utility.userAgentInit()
+//        Utility.userAgentInit()
                 
         let configuration : WKWebViewConfiguration = WKWebViewConfiguration.init()
         let controller : WKUserContentController = WKUserContentController.init()
@@ -35,7 +38,13 @@ class ViewController2: BasicViewController, WKNavigationDelegate, WKScriptMessag
         m_WebView = WKWebView.init(frame: CGRect.init(), configuration: configuration)
         m_WebView.translatesAutoresizingMaskIntoConstraints = false;
                 
-        m_WebView.customUserAgent = "webView CustomAgent"
+        DFT_TRACE_PRINT(output: "1. userAgent \(m_WebView.value(forKey: "userAgent"))")
+        
+        m_WebView.addUserAgent("May'n")
+        
+        DFT_TRACE_PRINT(output: "2. userAgent \(m_WebView.value(forKey: "userAgent"))")
+        
+//        m_WebView.customUserAgent = "webView CustomAgent"
         
         self.view .addSubview(m_WebView)
         
@@ -95,13 +104,33 @@ class ViewController2: BasicViewController, WKNavigationDelegate, WKScriptMessag
     
     // MARK: - WKUIDelegate
     func webView(_ webView: WKWebView, createWebViewWith configuration: WKWebViewConfiguration, for navigationAction: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView? {
+        //뷰를 생성하는 경우
+        let frame = UIScreen.main.bounds
+        
+        //파라미터로 받은 configuration
+        createWebView = WKWebView(frame: frame, configuration: configuration)
+        
+        //오토레이아웃 처리
+        createWebView!.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        
+        createWebView!.navigationDelegate = self
+        createWebView!.uiDelegate = self
+        
+        
+        view.addSubview(createWebView!)
+        
+        return createWebView!
+
         // windows Open
-        return nil;
+//        return nil;
     }
     
     func webViewDidClose(_ webView: WKWebView) {
         // windows close
-        
+        if webView == createWebView {
+            createWebView?.removeFromSuperview()
+            createWebView = nil
+        }
     }
         
     func webView(_ webView: WKWebView, runJavaScriptAlertPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping () -> Void) {

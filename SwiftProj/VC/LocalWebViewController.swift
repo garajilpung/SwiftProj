@@ -65,10 +65,10 @@ class LocalWebViewController: BasicViewController {
         mWebView.navigationDelegate = self
         mWebView.uiDelegate = self
         
-//        loadHtml()
+        loadHtml()
         
-        saveFile()
-        loadDocFile()
+//        saveFile()
+//        loadDocFile()
     }
 
 
@@ -78,6 +78,7 @@ class LocalWebViewController: BasicViewController {
             do
             {
                 let contents = try String(contentsOfFile: url.path)
+                print("URL \(url.deletingLastPathComponent())")
                 mWebView.loadHTMLString(contents, baseURL: url.deletingLastPathComponent())
             }
             catch

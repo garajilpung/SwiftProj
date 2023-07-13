@@ -5,8 +5,10 @@ target 'SwiftProj' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   pod 'AFNetworking', '~> 3.0'
-  pod 'Charts'
+#  pod 'Charts'
   pod 'Zip', '~> 2.1'
+  pod 'lottie-ios'
+  pod 'AssetsPickerViewController', '~> 2.0'
   
   # Pods for SwiftProj
 
