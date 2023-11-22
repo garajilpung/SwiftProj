@@ -269,3 +269,11 @@ class Utility {
 }
 
 
+public func redirectConsoleLogToDocumentFolder() {
+    let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).map(\.path)
+    let documentsDirectory = paths[0]
+    let logPath = URL(fileURLWithPath: documentsDirectory).appendingPathComponent("console.log").path
+    
+    print("\(stderr)")
+    freopen(logPath, "a+", stderr)
+}

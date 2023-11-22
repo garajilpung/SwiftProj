@@ -8,6 +8,7 @@
 
 import UIKit
 import WebKit
+//import testFramework
 
 class RootTableViewController: UITableViewController {
 
@@ -55,6 +56,7 @@ class RootTableViewController: UITableViewController {
             // delete
         }
         
+        
         /// cookie
 //        GlobalData.sharedInstance.getCookie(type: 0)
 //        print("cookie \(GlobalData.sharedInstance.dataCookie!)")
@@ -79,6 +81,39 @@ class RootTableViewController: UITableViewController {
         
         let orientationValue = UIInterfaceOrientationMask.portrait.rawValue
         UIDevice.current.setValue(orientationValue, forKey: "orientation")
+        
+        
+        let qu = DispatchQueue(label: "222vassdf", attributes: DispatchQueue.Attributes.concurrent)
+        
+        qu.sync {
+            for _ in 0...100 {
+                print("sync1")
+            }
+        }
+        
+        qu.sync {
+            for _ in 0...5 {
+                print("sync2")
+            }
+        }
+     
+        qu.sync {
+            for _ in 0...5 {
+                print("sync3")
+            }
+        }
+        
+        qu.sync {
+            for _ in 0...5 {
+                print("sync4")
+            }
+        }
+        
+        qu.sync {
+            for _ in 0...5 {
+                print("sync5")
+            }
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {

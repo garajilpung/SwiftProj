@@ -736,6 +736,18 @@
 			<key>actID</key>
 			<string>WebInLocalViewController</string>
 		</dict>
+		<dict>
+			<key>index</key>
+			<string>61</string>
+			<key>title</key>
+			<string>dataTask delegate</string>
+			<key>actType</key>
+			<string>push</string>
+			<key>target</key>
+			<string>Object</string>
+			<key>actID</key>
+			<string>DataTaskDelegateViewController</string>
+		</dict>
 	</array>
 	<key>section2</key>
 	<array>

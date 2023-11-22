@@ -45,12 +45,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         print("device \(UIDevice.current.modelName)")
         
+        redirectConsoleLogToDocumentFolder()
+        
 //        Utility.increaseBadge()
         
         // Push 관련 delegate 함수 연결
 //        registerForRemoteNotifications()
         
-        NotificationCenter.default.addObserver(self, selector: #selector(deviceOrientationDidChange), name: UIDevice.orientationDidChangeNotification , object: nil)
+        
+        
+//        NotificationCenter.default.addObserver(self, selector: #selector(deviceOrientationDidChange), name: UIDevice.orientationDidChangeNotification , object: nil)
         return true
     }
 

@@ -171,6 +171,14 @@ class FileManagerViewController: BasicViewController {
             print("file create 실패")
         }
         
+        print("\(URL(fileURLWithPath: fileName).absoluteString)")
+        
+        if let _ = NSData(contentsOfFile:fileName) {
+            print("data file not null")
+        } else {
+            print("data file null")
+        }
+        
     }
     
     // zip 관련 내용을 추가한다.
