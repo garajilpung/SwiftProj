@@ -56,10 +56,5 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
         
         DFT_TRACE_PRINT(output: "open URL \(URLContexts.first?.url.absoluteString ?? "vvv")")
-        
-        
-        
     }
-    
-    
 }

@@ -38,14 +38,14 @@ class CharacterViewModel {
     
     //MARK:- Properties
     
-    let image:Observable<UIImage?> = Observable(nil)
-    let name:Observable<String?> = Observable(nil)
-    let gender:Observable<String?> = Observable(nil)
-    let country:Observable<String?> = Observable(nil)
+    let image:ObservableC<UIImage?> = ObservableC(nil)
+    let name:ObservableC<String?> = ObservableC(nil)
+    let gender:ObservableC<String?> = ObservableC(nil)
+    let country:ObservableC<String?> = ObservableC(nil)
     
     var index:Int = 0
     
-    let sFlag : Observable<String?> = Observable(nil)
+    let sFlag : ObservableC<String?> = ObservableC(nil)
     
     init() {
         self.image.value = characters[0].image

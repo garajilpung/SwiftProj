@@ -29,7 +29,8 @@ class HttpConnectionViewController: BasicViewController {
                                   "id":"ksos73",
                                   "regTime":regTime!]
         
-        sendPost(pUrl: "https://garajilpung.synology.me/php/post.php", dic: dic)
+//        sendPost(pUrl: "https://garajilpung.synology.me/php/post.php", dic: dic)
+        sendPost(pUrl: "https://jsonplaceholder.typicode.com/posts", dic: dic)
         sendGet(pUrl: "https://garajilpung.synology.me/php/get.php", dic: dic)
     }
 
@@ -49,6 +50,10 @@ class HttpConnectionViewController: BasicViewController {
     func sendPost(pUrl:String, dic:NSDictionary) -> Void {
         var parameter : String! = ""
     
+        let cookies = HTTPCookieStorage.shared.cookies(for: URL(string: pUrl)!)
+        
+        print("Cookies \(cookies!)")
+        
         let defaultSession : URLSession = URLSession.init(configuration: URLSessionConfiguration.default)
         
         let url: URL! = URL(string: pUrl)
@@ -63,23 +68,28 @@ class HttpConnectionViewController: BasicViewController {
         
         let postData : Data? = parameter.data(using: .utf8)
         
+        
         urlRequest.httpMethod = "POST"
         urlRequest.httpBody = postData
+        urlRequest.setValue("divm=ifmiw; diosmv=wokdmf; ", forHTTPHeaderField: "Cookie")
                 
         let dTask = defaultSession.dataTask(with: urlRequest) { (data, res, err) in
             // getting Data Error
-            guard err == nil else {
-                print("Error occur: \(String(describing: err))")
-                return
-            }
+//            guard let err = err else {
+//                print("Error occur: \(String(describing: err))")
+//                return
+//            }
 
-            guard let data = data, let response = res as? HTTPURLResponse, response.statusCode == 200 else {
-                return
-            }
+//            guard let data = data, let response = res as? HTTPURLResponse, response.statusCode == 200 else {
+//                return
+//            }
 
-            let str : String? = String(data: data, encoding: String.Encoding.utf8)
-            print("str ", str!)
+//            let str : String? = String(data: data, encoding: String.Encoding.utf8)
+//            print("str ", str!)
             
+            let cookies = HTTPCookieStorage.shared.cookies(for: URL(string: pUrl)!)
+            
+            print("Cookies \(cookies!)")
         }
         
         dTask.resume()

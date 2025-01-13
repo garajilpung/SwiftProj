@@ -77,7 +77,8 @@ class ViewController2: BasicViewController, WKNavigationDelegate, WKScriptMessag
         m_WebView.navigationDelegate = self
         m_WebView.uiDelegate = self
                 
-        let url = URL.init(string: "https://garajilpung.synology.me/test/iOS_KWWebView_Script.html")
+//        let url = URL.init(string: "https://garajilpung.synology.me/test/iOS_KWWebView_Script.html")
+        let url = URL.init(string: "https://gov.kr")
 //        let url = URL.init(string: "https://garajilpung.synology.me/test/audio.html")
         m_WebView.load(URLRequest.init(url: url!))
         

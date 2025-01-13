@@ -31,7 +31,7 @@ class DataTaskDelegateViewController: BasicViewController {
     }
     */
 
-    @IBAction func onBtnStart(_ sender: Any) {
+    @IBAction func onBtnStart2(_ sender: Any) {
         
         var req = URLRequest(url: URL(string: "https://garajilpung.synology.me/test/aa.txt")!)
         req.httpMethod = "GET"
@@ -46,6 +46,66 @@ class DataTaskDelegateViewController: BasicViewController {
         
         rcData = Data()
         dtDownlad.resume()
+    }
+    
+    @IBAction func onBtnStart(_ sender: Any) {
+        
+        var req1 = URLRequest(url: URL(string: "https:/down.finger.co.kr/down/mws/big/service/bigcore")!)
+        req1.httpMethod = "GET"
+
+        URLSession.shared.dataTask(with: req1) { (data, response, error)in
+            
+            if (error == nil) {
+                print("url \(String(describing: req1.url?.absoluteString)) size [\(String(describing: data?.count))]")
+                
+//                let coreDe = ObjCFunc.aes128Decrypt(withKey: "com.mwsniper", encData: data!)
+//                
+//                if coreDe.count != 0 {
+//                    let coreString = String(data: coreDe, encoding: .utf8)
+//                    
+//                    print("url \(String(describing: req1.url?.absoluteString)) size [\(String(describing: coreString!.count))]")
+//                }
+            }
+            
+        }.resume()
+        
+        var req2 = URLRequest(url: URL(string: "https:/down.finger.co.kr/down/mws/big/service/bigpki")!)
+        req2.httpMethod = "GET"
+
+        URLSession.shared.dataTask(with: req2) { (data, response, error)in
+            
+            if (error == nil) {
+                print("url \(String(describing: req2.url?.absoluteString)) size [\(String(describing: data?.count))]")
+            }
+            
+//            let coreDe = ObjCFunc.aes128Decrypt(withKey: "com.mwsniper", encData: data!)
+//
+//            if coreDe.count != 0 {
+//                let coreString = String(data: coreDe, encoding: .utf8)
+//
+//                print("url \(String(describing: req1.url?.absoluteString)) size [\(String(describing: coreString!.count))]")
+//            }
+            
+        }.resume()
+        
+        var req3 = URLRequest(url: URL(string: "https:/down.finger.co.kr/down/mws/big/service/bigcommon")!)
+        req3.httpMethod = "GET"
+
+        URLSession.shared.dataTask(with: req3) { (data, response, error)in
+            
+            if (error == nil) {
+                print("url \(String(describing: req3.url?.absoluteString)) size [\(String(describing: data?.count))]")
+            }
+            
+//            let coreDe = ObjCFunc.aes128Decrypt(withKey: "com.mwsniper", encData: data!)
+//
+//            if coreDe.count != 0 {
+//                let coreString = String(data: coreDe, encoding: .utf8)
+//
+//                print("url \(String(describing: req1.url?.absoluteString)) size [\(String(describing: coreString!.count))]")
+//            }
+            
+        }.resume()
     }
     
 }

@@ -4,6 +4,9 @@ ${BUILT_PRODUCTS_DIR}/AssetsPickerViewController/AssetsPickerViewController.fram
 ${BUILT_PRODUCTS_DIR}/Device/Device.framework
 ${BUILT_PRODUCTS_DIR}/Dimmer/Dimmer.framework
 ${BUILT_PRODUCTS_DIR}/FadeView/FadeView.framework
+${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework
+${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework
+${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework
 ${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework
 ${BUILT_PRODUCTS_DIR}/SwiftARGB/SwiftARGB.framework
 ${BUILT_PRODUCTS_DIR}/TinyLog/TinyLog.framework

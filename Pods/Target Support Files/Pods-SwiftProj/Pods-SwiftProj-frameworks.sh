@@ -18,7 +18,7 @@ echo "mkdir -p ${CONFIGURATION_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}"
 mkdir -p "${CONFIGURATION_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}"
 
 COCOAPODS_PARALLEL_CODE_SIGN="${COCOAPODS_PARALLEL_CODE_SIGN:-false}"
-SWIFT_STDLIB_PATH="${DT_TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}"
+SWIFT_STDLIB_PATH="${TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}"
 BCSYMBOLMAP_DIR="BCSymbolMaps"
 
 
@@ -41,7 +41,6 @@ install_framework()
 
   if [ -L "${source}" ]; then
     echo "Symlinked..."
-#    source="$(readlink "${source}")"
     source="$(readlink -f "${source}")"
   fi
 
@@ -182,6 +181,9 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Device/Device.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Dimmer/Dimmer.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/FadeView/FadeView.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftARGB/SwiftARGB.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/TinyLog/TinyLog.framework"
@@ -195,6 +197,9 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Device/Device.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Dimmer/Dimmer.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/FadeView/FadeView.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftARGB/SwiftARGB.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/TinyLog/TinyLog.framework"

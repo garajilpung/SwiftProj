@@ -11,6 +11,15 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef enum {
+    Hash_MD2,
+    Hash_MD4,
+    Hash_MD5,
+    Hash_SHA1,
+    Hash_SHA256,
+    Hash_SHA512
+} HashAlg;
+
 // 처음에 ObjectC 파일 추가
 // 프로젝트에 따라 안내팝업 뜰 수도 있고 안 뜰수 도 있다.
 // 팝업이 표시되면 "Create Brdiing Header" 선택
@@ -35,6 +44,35 @@ NS_ASSUME_NONNULL_BEGIN
 + (void) makeGrayTiffUIImage:(UIImage *)uiImage toTiff:(NSString *)file withThreshold:(float)threshold;
 
 + (void) makeTiffRGBAUIImage:(NSArray<UIImage*> *)uiImages toTiff:(NSString *)file;
+
++ (NSData *)AES128DecryptWithKey:(NSString *)key encData:(NSData *)encData;
+
++ (NSString *)makeAESKey:(NSString *)str;
+
+
++ (NSData *)getHash:(NSData *)data hashAlg:(HashAlg)hashAlg;
++ (NSData *)getHash:(NSData *)data hashAlg:(HashAlg)hashAlg length:(UInt32)length;
+
+/**
+ Hash를 hexString으로 반환합니다.
+
+ @since 1.0.0
+ @param data 대상 데이터
+ @param hashAlg (Hash) 알고리즘
+ @return Hash Data (hexString Type)
+ */
++ (NSString *)getHashAsHexString:(NSData *)data hashAlg:(HashAlg)hashAlg;
++ (NSString *)getHashAsHexString:(NSData *)data hashAlg:(HashAlg)hashAlg length:(UInt32)length;
+/**
+ Hash를 base64String으로 반환합니다.
+ 
+ @since 1.0.0
+ @param data 대상 데이터
+ @param hashAlg (Hash) 알고리즘
+ @return Hash Data (base64String Type)
+ */
++ (NSString *)getHashAsBase64String:(NSData *)data hashAlg:(HashAlg)hashAlg;
++ (NSString *)getHashAsBase64String:(NSData *)data hashAlg:(HashAlg)hashAlg length:(UInt32)length;
 @end
 
 

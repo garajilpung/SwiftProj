@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,8 @@
 		84E073E623F2DB5E009F89B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E073E423F2DB5E009F89B0 /* LaunchScreen.storyboard */; };
 		84E073F123F2DB5E009F89B0 /* SwiftProjTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E073F023F2DB5E009F89B0 /* SwiftProjTests.swift */; };
 		84E073FC23F2DB5E009F89B0 /* SwiftProjUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E073FB23F2DB5E009F89B0 /* SwiftProjUITests.swift */; };
+		8B0B107E2B871F45002B2263 /* RxSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B107C2B871F45002B2263 /* RxSwiftViewController.swift */; };
+		8B0B107F2B871F45002B2263 /* RxSwiftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B0B107D2B871F45002B2263 /* RxSwiftViewController.xib */; };
 		8B1A8DAC28338A4800F85971 /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B1A8DAB28338A4800F85971 /* loading.gif */; };
 		8B20CD3E286D7D0F0062C2D3 /* CallAppShemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B20CD3C286D7D0F0062C2D3 /* CallAppShemeViewController.swift */; };
 		8B20CD3F286D7D0F0062C2D3 /* CallAppShemeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B20CD3D286D7D0F0062C2D3 /* CallAppShemeViewController.xib */; };
@@ -27,10 +29,15 @@
 		8B20CD49286EC1210062C2D3 /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B20CD48286EC1210062C2D3 /* DatePickerView.swift */; };
 		8B20CD4B286EC1610062C2D3 /* DatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B20CD4A286EC1610062C2D3 /* DatePickerView.xib */; };
 		8B22CA3F284F0EF6002A58B8 /* ObjCFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B22CA3E284F0EF6002A58B8 /* ObjCFunc.m */; };
-		8B31CA822859632B008F94BE /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B31CA812859632A008F94BE /* Observable.swift */; };
+		8B31CA822859632B008F94BE /* ObservableC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B31CA812859632A008F94BE /* ObservableC.swift */; };
 		8B400F8425AAFB0200F0C079 /* TwinWebShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B400F8225AAFB0200F0C079 /* TwinWebShareViewController.swift */; };
 		8B400F8525AAFB0200F0C079 /* TwinWebShareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B400F8325AAFB0200F0C079 /* TwinWebShareViewController.xib */; };
 		8B43D2792872D4CB00EC7D8F /* lottie-nft.json in Resources */ = {isa = PBXBuildFile; fileRef = 8B43D2782872D4CB00EC7D8F /* lottie-nft.json */; };
+		8B49DFAD2C8E7A300014990D /* SessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B49DFAB2C8E7A300014990D /* SessionViewController.swift */; };
+		8B49DFAE2C8E7A300014990D /* SessionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B49DFAC2C8E7A300014990D /* SessionViewController.xib */; };
+		8B4AC09F2C76D70A005DECCA /* CombineMVVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4AC09E2C76D70A005DECCA /* CombineMVVM.swift */; };
+		8B4AC0A22C76D7B5005DECCA /* MVVMTest2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4AC0A02C76D7B5005DECCA /* MVVMTest2ViewController.swift */; };
+		8B4AC0A32C76D7B5005DECCA /* MVVMTest2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B4AC0A12C76D7B5005DECCA /* MVVMTest2ViewController.xib */; };
 		8B54ED31288A2F22003709B8 /* libtiff.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B54ED2C288A2F22003709B8 /* libtiff.a */; };
 		8B54ED32288A2F22003709B8 /* libtiffxx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B54ED2E288A2F22003709B8 /* libtiffxx.a */; };
 		8B54ED3E288A30BE003709B8 /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B54ED38288A30BE003709B8 /* libjpeg.a */; };
@@ -65,6 +72,10 @@
 		8B729C402872C91500D7A848 /* LottieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B729C3E2872C91500D7A848 /* LottieViewController.xib */; };
 		8B88B7E1287E9E5D00F651BC /* WebInLocalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B88B7DF287E9E5D00F651BC /* WebInLocalViewController.swift */; };
 		8B88B7E2287E9E5D00F651BC /* WebInLocalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B88B7E0287E9E5D00F651BC /* WebInLocalViewController.xib */; };
+		8BBA926A2B4BAB80009DCA6A /* PerformViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBA92682B4BAB80009DCA6A /* PerformViewController.swift */; };
+		8BBA926B2B4BAB80009DCA6A /* PerformViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BBA92692B4BAB80009DCA6A /* PerformViewController.xib */; };
+		8BCB7BD82C292BE800BB235E /* OptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCB7BD72C292BE800BB235E /* OptView.swift */; };
+		8BCB7BDA2C292BF200BB235E /* OptView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BCB7BD92C292BF200BB235E /* OptView.xib */; };
 		8BDDAFBC2585CAE9003EE57F /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDDAFBB2585CAE9003EE57F /* SettingViewController.swift */; };
 		8BDDAFC12585CFD7003EE57F /* CommonDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDDAFC02585CFD7003EE57F /* CommonDefine.swift */; };
 		8BE453A02887E5D7000F7936 /* ico_error_lzw@3x.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 8BE4539F2887E5D7000F7936 /* ico_error_lzw@3x.tiff */; };
@@ -270,6 +281,8 @@
 		84E073F723F2DB5E009F89B0 /* SwiftProjUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftProjUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84E073FB23F2DB5E009F89B0 /* SwiftProjUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftProjUITests.swift; sourceTree = "<group>"; };
 		84E073FD23F2DB5E009F89B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B0B107C2B871F45002B2263 /* RxSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftViewController.swift; sourceTree = "<group>"; };
+		8B0B107D2B871F45002B2263 /* RxSwiftViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RxSwiftViewController.xib; sourceTree = "<group>"; };
 		8B1A8DAB28338A4800F85971 /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
 		8B20CD3C286D7D0F0062C2D3 /* CallAppShemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallAppShemeViewController.swift; sourceTree = "<group>"; };
 		8B20CD3D286D7D0F0062C2D3 /* CallAppShemeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CallAppShemeViewController.xib; sourceTree = "<group>"; };
@@ -280,10 +293,15 @@
 		8B20CD4A286EC1610062C2D3 /* DatePickerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DatePickerView.xib; sourceTree = "<group>"; };
 		8B22CA3D284F0EF6002A58B8 /* ObjCFunc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCFunc.h; sourceTree = "<group>"; };
 		8B22CA3E284F0EF6002A58B8 /* ObjCFunc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjCFunc.m; sourceTree = "<group>"; };
-		8B31CA812859632A008F94BE /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		8B31CA812859632A008F94BE /* ObservableC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservableC.swift; sourceTree = "<group>"; };
 		8B400F8225AAFB0200F0C079 /* TwinWebShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwinWebShareViewController.swift; sourceTree = "<group>"; };
 		8B400F8325AAFB0200F0C079 /* TwinWebShareViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwinWebShareViewController.xib; sourceTree = "<group>"; };
 		8B43D2782872D4CB00EC7D8F /* lottie-nft.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lottie-nft.json"; sourceTree = "<group>"; };
+		8B49DFAB2C8E7A300014990D /* SessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewController.swift; sourceTree = "<group>"; };
+		8B49DFAC2C8E7A300014990D /* SessionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SessionViewController.xib; sourceTree = "<group>"; };
+		8B4AC09E2C76D70A005DECCA /* CombineMVVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineMVVM.swift; sourceTree = "<group>"; };
+		8B4AC0A02C76D7B5005DECCA /* MVVMTest2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMTest2ViewController.swift; sourceTree = "<group>"; };
+		8B4AC0A12C76D7B5005DECCA /* MVVMTest2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MVVMTest2ViewController.xib; sourceTree = "<group>"; };
 		8B54ED2B288A2F22003709B8 /* tiff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tiff.h; sourceTree = "<group>"; };
 		8B54ED2C288A2F22003709B8 /* libtiff.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtiff.a; sourceTree = "<group>"; };
 		8B54ED2D288A2F22003709B8 /* tiffvers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tiffvers.h; sourceTree = "<group>"; };
@@ -352,6 +370,10 @@
 		8B729C3E2872C91500D7A848 /* LottieViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LottieViewController.xib; sourceTree = "<group>"; };
 		8B88B7DF287E9E5D00F651BC /* WebInLocalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebInLocalViewController.swift; sourceTree = "<group>"; };
 		8B88B7E0287E9E5D00F651BC /* WebInLocalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebInLocalViewController.xib; sourceTree = "<group>"; };
+		8BBA92682B4BAB80009DCA6A /* PerformViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformViewController.swift; sourceTree = "<group>"; };
+		8BBA92692B4BAB80009DCA6A /* PerformViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PerformViewController.xib; sourceTree = "<group>"; };
+		8BCB7BD72C292BE800BB235E /* OptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptView.swift; sourceTree = "<group>"; };
+		8BCB7BD92C292BF200BB235E /* OptView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OptView.xib; sourceTree = "<group>"; };
 		8BDDAFBB2585CAE9003EE57F /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		8BDDAFC02585CFD7003EE57F /* CommonDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonDefine.swift; sourceTree = "<group>"; };
 		8BE4539F2887E5D7000F7936 /* ico_error_lzw@3x.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "ico_error_lzw@3x.tiff"; sourceTree = "<group>"; };
@@ -799,9 +821,10 @@
 		B937278F279F7AB10051E524 /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
-				8B31CA812859632A008F94BE /* Observable.swift */,
+				8B31CA812859632A008F94BE /* ObservableC.swift */,
 				B937279A279F7C180051E524 /* MVVMViewController.swift */,
 				B937279B279F7C180051E524 /* MVVMViewController.xib */,
+				8B4AC09E2C76D70A005DECCA /* CombineMVVM.swift */,
 			);
 			path = MVVM;
 			sourceTree = "<group>";
@@ -839,6 +862,8 @@
 				B938295527E2EABA000B15E1 /* AudioView.xib */,
 				8B20CD48286EC1210062C2D3 /* DatePickerView.swift */,
 				8B20CD4A286EC1610062C2D3 /* DatePickerView.xib */,
+				8BCB7BD72C292BE800BB235E /* OptView.swift */,
+				8BCB7BD92C292BF200BB235E /* OptView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -879,6 +904,8 @@
 		B976108F256B38ED003F28A7 /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				B97610A2256B8808003F28A7 /* ViewController2.swift */,
+				B97610A3256B8808003F28A7 /* ViewController2.xib */,
 				8B400F8225AAFB0200F0C079 /* TwinWebShareViewController.swift */,
 				8B400F8325AAFB0200F0C079 /* TwinWebShareViewController.xib */,
 				B910C47D258B247C0046775B /* AlbumViewController.swift */,
@@ -905,8 +932,6 @@
 				B910C472258B24790046775B /* PopupViewController.xib */,
 				B910C474258B247A0046775B /* RotateViewController.swift */,
 				B910C475258B247A0046775B /* RotateViewController.xib */,
-				B97610A2256B8808003F28A7 /* ViewController2.swift */,
-				B97610A3256B8808003F28A7 /* ViewController2.xib */,
 				B9403B03256C959000B4CBC6 /* FileManagerViewController.swift */,
 				B9403B04256C959000B4CBC6 /* FileManagerViewController.xib */,
 				B9403B0C256CF1BB00B4CBC6 /* CaptureViewController.swift */,
@@ -992,6 +1017,14 @@
 				8B88B7E0287E9E5D00F651BC /* WebInLocalViewController.xib */,
 				51859AE82B033DEE007247E5 /* DataTaskDelegateViewController.swift */,
 				51859AE92B033DEE007247E5 /* DataTaskDelegateViewController.xib */,
+				8BBA92682B4BAB80009DCA6A /* PerformViewController.swift */,
+				8BBA92692B4BAB80009DCA6A /* PerformViewController.xib */,
+				8B0B107C2B871F45002B2263 /* RxSwiftViewController.swift */,
+				8B0B107D2B871F45002B2263 /* RxSwiftViewController.xib */,
+				8B4AC0A02C76D7B5005DECCA /* MVVMTest2ViewController.swift */,
+				8B4AC0A12C76D7B5005DECCA /* MVVMTest2ViewController.xib */,
+				8B49DFAB2C8E7A300014990D /* SessionViewController.swift */,
+				8B49DFAC2C8E7A300014990D /* SessionViewController.xib */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -1180,11 +1213,14 @@
 			files = (
 				8B5664F4287E45B70012FBD8 /* excelView.xlsx in Resources */,
 				B910C48B258B247E0046775B /* RotateViewController.xib in Resources */,
+				8BCB7BDA2C292BF200BB235E /* OptView.xib in Resources */,
 				B956E95B25FEE96D005039FA /* JsonObjectViewController.xib in Resources */,
 				B98F857027D5A2090084C5D5 /* banner_03.png in Resources */,
 				B9F62761280FC4C800366DC2 /* RadiusViewController.xib in Resources */,
+				8B4AC0A32C76D7B5005DECCA /* MVVMTest2ViewController.xib in Resources */,
 				B9372793279F7BE20051E524 /* MVCViewController.xib in Resources */,
 				B9FAB80A27718AAE008839D9 /* MemoryLeakViewController.xib in Resources */,
+				8B49DFAE2C8E7A300014990D /* SessionViewController.xib in Resources */,
 				B98F856B27D59FC30084C5D5 /* webImg in Resources */,
 				B97610A5256B8808003F28A7 /* ViewController2.xib in Resources */,
 				B910C497258B247E0046775B /* InfinityScrollViewController.xib in Resources */,
@@ -1192,6 +1228,7 @@
 				B9F46824268166EA00A58C8F /* StreamViewController.xib in Resources */,
 				B9F6389E27979992004144CD /* ShakeViewController.xib in Resources */,
 				B9372786279E8C170051E524 /* CVCell.xib in Resources */,
+				8BBA926B2B4BAB80009DCA6A /* PerformViewController.xib in Resources */,
 				8B20CD3F286D7D0F0062C2D3 /* CallAppShemeViewController.xib in Resources */,
 				B93727A1279F828A0051E524 /* ArticleTableViewCell.xib in Resources */,
 				B910C483258B247E0046775B /* DateManagerViewController.xib in Resources */,
@@ -1211,6 +1248,7 @@
 				8BE453A02887E5D7000F7936 /* ico_error_lzw@3x.tiff in Resources */,
 				B910C4A4258C88F30046775B /* CarmeraViewController.xib in Resources */,
 				B910C49C258B24FB0046775B /* QRCodeViewController.xib in Resources */,
+				8B0B107F2B871F45002B2263 /* RxSwiftViewController.xib in Resources */,
 				B92912B225E7863400250756 /* Kalimba.mp3 in Resources */,
 				B910C487258B247E0046775B /* AlbumViewController.xib in Resources */,
 				B9F2416D256E4A610033E9C5 /* DummyView.xib in Resources */,
@@ -1407,7 +1445,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B31CA822859632B008F94BE /* Observable.swift in Sources */,
+				8B31CA822859632B008F94BE /* ObservableC.swift in Sources */,
 				B98346F32773FC8F007D1687 /* Extension.swift in Sources */,
 				8B5664E8287C0A1C0012FBD8 /* TIFFIOUtils.m in Sources */,
 				8B20CD41286D9C910062C2D3 /* SceneDelegate.swift in Sources */,
@@ -1475,8 +1513,10 @@
 				8B5664E0287C0A1C0012FBD8 /* TIFFFieldTagTypes.m in Sources */,
 				8B20CD3E286D7D0F0062C2D3 /* CallAppShemeViewController.swift in Sources */,
 				8B5664EE287C0A1C0012FBD8 /* TIFFWriter.m in Sources */,
+				8B4AC09F2C76D70A005DECCA /* CombineMVVM.swift in Sources */,
 				B9CE29CC2782ECB10074BAF2 /* MPDFViewController.swift in Sources */,
 				8B5664E5287C0A1C0012FBD8 /* TIFFUnsupportedCompression.m in Sources */,
+				8BBA926A2B4BAB80009DCA6A /* PerformViewController.swift in Sources */,
 				B9761094256B3990003F28A7 /* RootViewController.swift in Sources */,
 				8BEBABCB28659E42001F054D /* TIFFViewController.swift in Sources */,
 				8B5664DE287C0A1C0012FBD8 /* TIFFFileDirectoryEntry.m in Sources */,
@@ -1492,13 +1532,16 @@
 				B93DB35327BE212A00C7E5D6 /* MVVMTestViewController.swift in Sources */,
 				B9FF22C825F223E000C381B1 /* AVCaptureViewController.swift in Sources */,
 				B98F855C27D593360084C5D5 /* LocalWebViewController.swift in Sources */,
+				8B4AC0A22C76D7B5005DECCA /* MVVMTest2ViewController.swift in Sources */,
 				B9FAB80927718AAE008839D9 /* MemoryLeakViewController.swift in Sources */,
 				B93727A3279F86D80051E524 /* Article.swift in Sources */,
 				8B5664E2287C0A1C0012FBD8 /* TIFFLZWCompression.m in Sources */,
+				8B0B107E2B871F45002B2263 /* RxSwiftViewController.swift in Sources */,
 				B910C498258B247E0046775B /* ClipboardViewController.swift in Sources */,
 				B910C48C258B247E0046775B /* HttpConnectionViewController.swift in Sources */,
 				B9E7F85927D04EF300D9B1E0 /* InfinityScrollCell.swift in Sources */,
 				B937277F279E87790051E524 /* ColletionViewController.swift in Sources */,
+				8B49DFAD2C8E7A300014990D /* SessionViewController.swift in Sources */,
 				B937279C279F7C180051E524 /* MVVMViewController.swift in Sources */,
 				B9F841DB27AD178F007C1AD8 /* GoodsViewController.swift in Sources */,
 				8B88B7E1287E9E5D00F651BC /* WebInLocalViewController.swift in Sources */,
@@ -1515,6 +1558,7 @@
 				B9F24162256E30540033E9C5 /* introViewController.swift in Sources */,
 				B93727A9279F955B0051E524 /* ArticlePresenter.swift in Sources */,
 				8B5664DC287C0A1C0012FBD8 /* TIFFFieldTypes.m in Sources */,
+				8BCB7BD82C292BE800BB235E /* OptView.swift in Sources */,
 				8B5C73682862DEF500648643 /* CViewController.swift in Sources */,
 				8B5664F2287E42F20012FBD8 /* ExcelViewerViewController.swift in Sources */,
 				B9372792279F7BE20051E524 /* MVCViewController.swift in Sources */,
@@ -1751,7 +1795,7 @@
 					"$(PROJECT_DIR)/SwiftProj/ExternalLib/libjpeg",
 					"$(PROJECT_DIR)/SwiftProj/ExternalLib/libpng",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = smg.test.swiftproj;
+				PRODUCT_BUNDLE_IDENTIFIER = smg.testv.swiftproj;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/SwiftProj/SwiftProj-Briding-Header.h";
@@ -1792,7 +1836,7 @@
 					"$(PROJECT_DIR)/SwiftProj/ExternalLib/libjpeg",
 					"$(PROJECT_DIR)/SwiftProj/ExternalLib/libpng",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = smg.test.swiftproj;
+				PRODUCT_BUNDLE_IDENTIFIER = smg.testv.swiftproj;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/SwiftProj/SwiftProj-Briding-Header.h";

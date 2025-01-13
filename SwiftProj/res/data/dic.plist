@@ -14,7 +14,7 @@
 			<key>target</key>
 			<string>Object</string>
 			<key>actID</key>
-			<string>ViewController2</string>
+			<string>RxSwiftViewController</string>
 		</dict>
 		<dict>
 			<key>index</key>
@@ -747,6 +747,54 @@
 			<string>Object</string>
 			<key>actID</key>
 			<string>DataTaskDelegateViewController</string>
+		</dict>
+		<dict>
+			<key>index</key>
+			<string>62</string>
+			<key>title</key>
+			<string>Perform</string>
+			<key>actType</key>
+			<string>push</string>
+			<key>target</key>
+			<string>Object</string>
+			<key>actID</key>
+			<string>PerformViewController</string>
+		</dict>
+		<dict>
+			<key>index</key>
+			<string>63</string>
+			<key>title</key>
+			<string>RxSwift</string>
+			<key>actType</key>
+			<string>push</string>
+			<key>target</key>
+			<string>Object</string>
+			<key>actID</key>
+			<string>RxSwiftViewController</string>
+		</dict>
+		<dict>
+			<key>index</key>
+			<string>64</string>
+			<key>title</key>
+			<string>Combine</string>
+			<key>actType</key>
+			<string>push</string>
+			<key>target</key>
+			<string>Object</string>
+			<key>actID</key>
+			<string>MVVMTest2ViewController</string>
+		</dict>
+		<dict>
+			<key>index</key>
+			<string>65</string>
+			<key>title</key>
+			<string>Publisher</string>
+			<key>actType</key>
+			<string>push</string>
+			<key>target</key>
+			<string>Object</string>
+			<key>actID</key>
+			<string>SessionViewController</string>
 		</dict>
 	</array>
 	<key>section2</key>

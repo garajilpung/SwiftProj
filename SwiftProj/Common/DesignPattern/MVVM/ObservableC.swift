@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Observable<T> {
+class ObservableC<T> {
     
     typealias Listener = (T) -> Void
     
